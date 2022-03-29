@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Максим Ткачук](https://up.htmlacademy.ru/adaptive/25/user/1702543).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Гирда](https://htmlacademy.ru/profile/viktorgirda).
 
 ---
 
