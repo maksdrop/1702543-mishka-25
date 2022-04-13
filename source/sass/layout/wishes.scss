@@ -1,0 +1,12 @@
+.wishes__title {
+  padding-top: 34px;
+}
+
+.wishes__text {
+  &::placeholder {
+    font-size: $fontSize-medium_small;
+    line-height: $lineHeight-small_big;
+    color: $textСolor-main;
+    opacity: 0.3;
+  }
+}

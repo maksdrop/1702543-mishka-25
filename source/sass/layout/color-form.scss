@@ -1,0 +1,15 @@
+.color-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-form__title {
+  padding-top: 31px;
+}
+
+.color-form__name {
+  font-size: $fontSize-medium_small;
+  line-height: $lineHeight-small_big;
+  font-weight: 700;
+  color: $textСolor-main;
+}

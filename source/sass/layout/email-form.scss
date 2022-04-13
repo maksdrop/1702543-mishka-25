@@ -1,0 +1,16 @@
+.email-form__title {
+  padding-top: 34px;
+}
+
+.email-form__input {
+  background-image: url("../img/form/mail.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &::placeholder {
+    font-size: $fontSize-medium_small;
+    line-height: $lineHeight-small_big;
+    color: $textСolor-main;
+    opacity: 0.3;
+  }
+}

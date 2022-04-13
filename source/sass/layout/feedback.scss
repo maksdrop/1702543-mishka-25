@@ -1,0 +1,22 @@
+.feedback {
+  padding-top: 58px;
+}
+
+.feedback__describe {
+  line-height: $lineHeight-medium_big;
+}
+
+.feedback__author {
+  font-size: $fontSize-medium_small;
+}
+
+.feedback__author-instagram {
+  font-size: $fontSize-medium_small;
+  text-decoration: none;
+  color: $textСolor-secondary;
+}
+
+.feedback__button {
+  font-size: $fontSize-medium;
+  line-height: $lineHeight-medium_small;
+}

@@ -1,0 +1,12 @@
+.development {
+  display: flex;
+  padding-top: 22px;
+}
+
+.development__title {
+  margin: 0;
+  font-size: $fontSize-medium_big;
+  line-height: $lineHeight-small_big;
+  font-weight: 700;
+  text-transform: uppercase;
+}

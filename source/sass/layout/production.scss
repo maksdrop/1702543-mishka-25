@@ -1,0 +1,23 @@
+.production {
+  padding-top: 30px;
+  margin-bottom: 58px;
+}
+
+.production__title {
+  display: flex;
+}
+
+.production__title--decor {
+  font-size: $fontSize-medium_small;
+  color: $textСolor-main;
+}
+
+.production__text {
+  margin: 0;
+  font-size: $fontSize-small;
+}
+
+.production__button {
+  font-size: $fontSize-medium;
+  line-height: $lineHeight-small_medium;
+}

@@ -1,0 +1,14 @@
+.main-container {
+  flex-grow: 1;
+}
+
+.main__wrapper {
+  min-height: 177px;
+  background-color: $backgroundColor-secondary;
+}
+
+.main__title {
+  font-size: $fontSize-title_page;
+  line-height: $lineHeight-medium_big;
+  text-align: center;
+}
