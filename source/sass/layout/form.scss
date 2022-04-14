@@ -1,0 +1,30 @@
+.form {
+  padding-top: 17px;
+}
+
+.form__description {
+  margin: 0;
+  font-size: $fontSize-small;
+}
+
+.form__reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form__title--decor {
+  font-size: $fontSize-medium_small;
+  line-height: $lineHeight-small_medium;
+  color: $textСolor-form;
+}
+
+.form__required {
+  font-size: $fontSize-small-medium;
+  line-height: $lineHeight-small_medium;
+}
+
+.form__button {
+  font-size: $fontSize-medium_small;
+  line-height: $lineHeight-small_medium;
+}

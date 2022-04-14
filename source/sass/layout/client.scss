@@ -1,0 +1,26 @@
+.client {
+  display: flex;
+  flex-direction: column;
+}
+
+.client__title {
+  padding-top: 33px;
+}
+
+.client__name {
+  display: flex;
+  flex-direction: column;
+  font-size: $fontSize-medium_small;
+  line-height: $lineHeight-small_big;
+  font-weight: 700;
+  color: $textСolor-main;
+}
+
+.client__input {
+  &::placeholder {
+    font-size: $fontSize-medium_small;
+    line-height: $lineHeight-small_big;
+    color: $textСolor-main;
+    opacity: 0.3;
+  }
+}

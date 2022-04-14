@@ -1,0 +1,19 @@
+.modal {
+  min-height: 336px;
+}
+
+.modal__title {
+  font-size: $fontSize-subtitle;
+  line-height: $lineHeight-medium_big;
+}
+
+.modal__choose {
+  line-height: $lineHeight-medium_big;
+}
+
+.modal__button {
+  background-color: $backgroundColor-modal;
+  font-size: $fontSize-medium_small;
+  line-height: $lineHeight-small_medium;
+  color: #ffffff;
+}

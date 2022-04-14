@@ -1,0 +1,19 @@
+.card {
+  padding-top: 30px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: $fontSize-medium_small;
+  color: $textСolor-main;
+}
+
+.card__feature {
+  margin: 0;
+  font-size: $fontSize-small;
+  line-height: $lineHeight-medium_big;
+}
+
+.card__price {
+  color: $textСolor-main;
+}

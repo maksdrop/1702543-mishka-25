@@ -1,0 +1,34 @@
+// text-color
+$textСolor-main:      #000000;
+$textСolor-secondary: #444444;
+$textСolor-form:      #63d1bb;
+
+// background-color
+$backgroundColor-body:      #ffffff;
+$backgroundColor-secondary: #f1f1f1;
+$backgroundColor-button:    #c7c7c7;
+$backgroundColor-modal:       $textСolor-form;
+$backgroundColor-working:     $textСolor-form;
+
+// font-size
+$fontSize-title_page:    27px;
+$fontSize-subtitle:      25px;
+$fontSize-medium_big:    19px;
+$fontSize-medium:        18px;
+$fontSize-medium_small:  17px;
+$fontSize-small_big:     15px;
+$fontSize-small-medium:  14px;
+$fontSize-small:         13px;
+
+// line-height
+$lineHeight-medium_big:   30px;
+$lineHeight-medium:       24px;
+$lineHeight-medium_small: 20px;
+$lineHeight-small_big:    18px;
+$lineHeight-small_medium: 16px;
+
+// box-sizing
+$borderBox: border-box;
+
+// font-family
+$fontFamily: "Open Sans", sans-serif;

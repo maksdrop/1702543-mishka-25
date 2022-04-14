@@ -1,0 +1,23 @@
+.contacts {
+  padding-top: 89px;
+}
+
+.contacts__title {
+  font-size: $fontSize-subtitle;
+  line-height: $lineHeight-medium_big;
+}
+
+.contacts__address {
+  font-size: $fontSize-small-medium;
+  line-height: $lineHeight-medium_big;
+}
+
+.contacts__email-link {
+  color: $textСolor-secondary;
+  text-decoration: none;
+}
+
+.contacts__button {
+  font-size: $fontSize-medium;
+  line-height: $lineHeight-medium_small;
+}

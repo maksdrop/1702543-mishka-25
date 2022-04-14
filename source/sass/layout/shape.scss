@@ -1,0 +1,15 @@
+.shape {
+  display: flex;
+  flex-direction: column;
+}
+
+.shape__title {
+  padding-top: 29px;
+}
+
+.shape__name {
+  font-size: $fontSize-medium_small;
+  line-height: $lineHeight-small_big;
+  font-weight: 700;
+  color: $textСolor-main;
+}
