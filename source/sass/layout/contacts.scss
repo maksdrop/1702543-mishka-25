@@ -12,12 +12,68 @@
   line-height: $lineHeight-medium_big;
 }
 
-.contacts__email-link {
-  color: $textСolor-secondary;
-  text-decoration: none;
+.contacts__email {
+  margin: 0;
+
+  &--link {
+    color: $textСolor-secondary;
+    text-decoration: none;
+  }
+}
+
+.contacts__direction {
+  margin: 0;
 }
 
 .contacts__button {
+  display: block;
   font-size: $fontSize-medium;
   line-height: $lineHeight-medium_small;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 57px;
+  }
+
+  .contacts__address {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__direction {
+    width: 330px;
+  }
+
+  .contacts__button {
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: grid;
+    grid-template:
+      "contacts map"
+      "button map";
+    margin-bottom: 105px;
+  }
+
+  .contacts__wrapper {
+    grid-area: contacts;
+  }
+
+  .contacts__address {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    grid-area: map;
+  }
+
+  .contacts__button {
+    grid-area: button;
+  }
 }

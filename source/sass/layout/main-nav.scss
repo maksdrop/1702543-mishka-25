@@ -3,7 +3,54 @@
   font-size: $fontSize-medium_small;
 }
 
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .main-nav__link {
   text-decoration: none;
   color: $textСolor-main;
+}
+
+.main-nav__free {
+  display: none;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .main-nav__logo {
+    order: -1;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__free {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    grid-template-columns: 1fr 150px 1fr;
+    grid-template-areas: "product logo site"
+      "new new free";
+  }
+
+  .main-nav__logo {
+    grid-area: logo;
+  }
+
+  .main-nav__free {
+    grid-area: free;
+  }
 }

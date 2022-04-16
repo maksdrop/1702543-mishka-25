@@ -13,3 +13,30 @@
   line-height: $lineHeight-medium_small;
   color: $textСolor-form;
 }
+
+@media (min-width: $tablet-width) {
+  .product-week__wrapper {
+    display: grid;
+    grid-template:
+      "title title"
+      "detail image-week"
+      "order image-week";
+  }
+
+  .product-week__title {
+    display: flex;
+    grid-area: title;
+  }
+
+  .product-week__detail {
+    grid-area: detail;
+  }
+
+  .product-week__image {
+    grid-area: image-week;
+  }
+
+  .product-week__order {
+    grid-area: order;
+  }
+}

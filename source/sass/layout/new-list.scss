@@ -1,0 +1,10 @@
+.new-list {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .new-list {
+    display: flex;
+    grid-area: new;
+  }
+}

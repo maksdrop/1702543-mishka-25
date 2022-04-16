@@ -1,3 +1,8 @@
 .about {
   padding-top: 31px;
 }
+
+.about__title {
+  font-size: $fontSize-subtitle;
+  line-height: $lineHeight-medium_big;
+}

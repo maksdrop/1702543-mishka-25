@@ -3,10 +3,11 @@
 }
 
 .feedback__describe {
+  margin: 0;
   line-height: $lineHeight-medium_big;
 }
 
-.feedback__author {
+.feedback__author-name {
   font-size: $fontSize-medium_small;
 }
 
@@ -19,4 +20,34 @@
 .feedback__button {
   font-size: $fontSize-medium;
   line-height: $lineHeight-medium_small;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    display: grid;
+    grid-template:
+      "title button"
+      "describe describe"
+      "author switch";
+  }
+
+  .feedback__title {
+    grid-area: title;
+  }
+
+  .feedback__describe {
+    grid-area: describe;
+  }
+
+  .feedback__author-name {
+    grid-area: author;
+  }
+
+  .feedback__switch {
+    grid-area: switch;
+  }
+
+  .feedback__button {
+    grid-area: button;
+  }
 }

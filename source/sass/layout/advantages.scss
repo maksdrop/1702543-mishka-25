@@ -2,12 +2,22 @@
   color: $textСolor-main;
 }
 
-.advantages__title {
-  font-size: $fontSize-subtitle;
-  line-height: $lineHeight-medium_big;
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .advantages__subtitle {
+  width: 300px;
+  margin: 0;
   font-size: $fontSize-medium_small;
   line-height: $lineHeight-medium_small;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

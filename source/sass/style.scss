@@ -2,16 +2,23 @@
 @import "layout/variables.scss";
 @import "layout/global.scss";
 @import "layout/page.scss";
+
+// index
 @import "layout/main-header.scss";
+@import "layout/visually-hidden.scss";
+@import "layout/button.scss";
+@import "layout/title.scss";
 @import "layout/main-nav.scss";
 @import "layout/content-wrapper.scss";
 @import "layout/product-list.scss";
 @import "layout/site-list.scss";
+@import "layout/new-list.scss";
 @import "layout/main-container.scss";
 @import "layout/working.scss";
 @import "layout/product-week.scss";
+@import "layout/title-week.scss";
 @import "layout/detail-week.scss";
-@import "layout/card-week.scss";
+@import "layout/order-week.scss";
 @import "layout/about.scss";
 @import "layout/advantages.scss";
 @import "layout/feedback.scss";
@@ -23,6 +30,8 @@
 @import "layout/development.scss";
 @import "layout/modal.scss";
 @import "layout/size-modal.scss";
+
+// form
 @import "layout/form.scss";
 @import "layout/shape.scss";
 @import "layout/color-form.scss";
@@ -30,6 +39,8 @@
 @import "layout/phone.scss";
 @import "layout/email-form.scss";
 @import "layout/wishes.scss";
+
+// catalog
 @import "layout/catalog.scss";
 @import "layout/card.scss";
 @import "layout/production.scss";
