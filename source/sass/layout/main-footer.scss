@@ -2,3 +2,10 @@
   min-height: 160px;
   background-color: $backgroundColor-secondary;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -21,3 +21,36 @@
   font-size: $fontSize-medium;
   line-height: $lineHeight-small_medium;
 }
+
+@media (min-width: $tablet-width) {
+  .production__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__video {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__container {
+    display: grid;
+    grid-template: "video title"
+      "video description";
+    flex-direction: row;
+  }
+
+  .production__title {
+    grid-area: title;
+    flex-direction: column;
+  }
+
+  .production__video {
+    grid-area: video;
+  }
+
+  .production__description {
+    grid-area: description;
+  }
+}

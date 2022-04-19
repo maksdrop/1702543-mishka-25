@@ -17,3 +17,15 @@
 .card__price {
   color: $textСolor-main;
 }
+
+@media (min-width: $tablet-width) {
+  .card__container {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__container {
+    flex-direction: column;
+  }
+}

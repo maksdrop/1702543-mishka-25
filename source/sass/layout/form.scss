@@ -8,9 +8,15 @@
 }
 
 .form__reset {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   border: 0;
+}
+
+.form__reset-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__title--decor {
@@ -27,4 +33,40 @@
 .form__button {
   font-size: $fontSize-medium_small;
   line-height: $lineHeight-small_medium;
+}
+
+@media (min-width: $tablet-width) {
+  .form__reset {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__reset-container {
+    display: flex;
+    flex-direction: column;
+    width: 501px;
+  }
+
+  .form__description {
+    min-height: 60px;
+    margin: 0 auto;
+  }
+
+  .form__order {
+    display: flex;
+    padding-top: 53px;
+    margin-bottom: 50px;
+  }
+
+  .form__required {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__reset-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+  }
 }

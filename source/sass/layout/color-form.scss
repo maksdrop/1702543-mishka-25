@@ -1,9 +1,4 @@
 .color-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.color-form__title {
   padding-top: 31px;
 }
 
@@ -12,4 +7,27 @@
   line-height: $lineHeight-small_big;
   font-weight: 700;
   color: $textСolor-main;
+}
+
+@media (min-width: $tablet-width) {
+  .color-form {
+    min-height: 304px;
+    background: #f1f1f1;
+  }
+
+  .color-form__position {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color-form {
+    min-height: 228px;
+  }
+
+  .color-form__position {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

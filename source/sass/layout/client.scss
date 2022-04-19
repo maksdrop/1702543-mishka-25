@@ -1,9 +1,4 @@
 .client {
-  display: flex;
-  flex-direction: column;
-}
-
-.client__title {
   padding-top: 33px;
 }
 
@@ -22,5 +17,11 @@
     line-height: $lineHeight-small_big;
     color: $textСolor-main;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .client {
+    min-height: 200px;
   }
 }
