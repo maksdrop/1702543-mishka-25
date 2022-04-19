@@ -3,14 +3,18 @@
 }
 
 .main__wrapper {
-  min-height: 177px;
+  min-height: 226px;
   background-color: $backgroundColor-secondary;
 }
 
 .main__title {
-  position: relative;
-  top: 90px;
   font-size: $fontSize-title_page;
   line-height: $lineHeight-medium_big;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main__title {
+    padding-top: 100px;
+  }
 }

@@ -1,10 +1,16 @@
 .working {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 506px;
+  padding-top: 90px;
+  box-sizing: border-box;
+  justify-content: space-between;
   color: $textСolor-main;
   background-image: url("../img/working/hero.png");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .working__list {

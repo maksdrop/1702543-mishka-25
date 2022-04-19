@@ -1,9 +1,4 @@
 .shape {
-  display: flex;
-  flex-direction: column;
-}
-
-.shape__title {
   padding-top: 29px;
 }
 
@@ -12,4 +7,11 @@
   line-height: $lineHeight-small_big;
   font-weight: 700;
   color: $textСolor-main;
+}
+
+@media (min-width: $tablet-width) {
+  .shape {
+    padding-top: 63px;
+    margin-bottom: 50px;
+  }
 }

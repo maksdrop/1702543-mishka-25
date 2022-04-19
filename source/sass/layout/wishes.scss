@@ -1,4 +1,4 @@
-.wishes__title {
+.wishes {
   padding-top: 34px;
 }
 
@@ -8,5 +8,11 @@
     line-height: $lineHeight-small_big;
     color: $textСolor-main;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .wishes {
+    padding-top: 50px;
   }
 }
