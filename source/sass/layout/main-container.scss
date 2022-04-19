@@ -8,6 +8,8 @@
 }
 
 .main__title {
+  position: relative;
+  top: 90px;
   font-size: $fontSize-title_page;
   line-height: $lineHeight-medium_big;
   text-align: center;

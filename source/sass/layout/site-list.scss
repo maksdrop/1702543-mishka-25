@@ -1,5 +1,17 @@
-.site-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: end;
+    order: -1;
+  }
+
+  .site-list__hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    grid-area: site;
+  }
 }

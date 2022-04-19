@@ -14,3 +14,17 @@
   background-color: $backgroundColor-body;
   color: $textСolor-secondary;
 }
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 768px;
+    font-size: $fontSize-medium_small;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1200px;
+    font-size: $fontSize-medium_small;
+  }
+}

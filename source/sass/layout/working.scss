@@ -10,12 +10,40 @@
 .working__list {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
+  margin: 0;
   padding: 0;
   font-size: $fontSize-medium_big;
   color: #ffffff;
+  list-style-type: none;
 }
 
 .working__item {
+  width: 100%;
   background-color: $backgroundColor-working;
+
+  &--light {
+    background-color: $backgroundColor-working--light;
+  }
+}
+
+.working__content-wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .working__list {
+    display: flex;
+    width: 668px;
+    left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .working__list {
+    display: flex;
+    width: 1050px;
+  }
 }

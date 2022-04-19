@@ -1,14 +1,20 @@
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
 // text-color
 $textСolor-main:      #000000;
 $textСolor-secondary: #444444;
 $textСolor-form:      #63d1bb;
 
 // background-color
-$backgroundColor-body:      #ffffff;
-$backgroundColor-secondary: #f1f1f1;
-$backgroundColor-button:    #c7c7c7;
-$backgroundColor-modal:       $textСolor-form;
-$backgroundColor-working:     $textСolor-form;
+$backgroundColor-body:         #ffffff;
+$backgroundColor-secondary:    #f1f1f1;
+$backgroundColor-button:       #c7c7c7;
+$backgroundColor-modal:          $textСolor-form;
+$backgroundColor-working:      #56c3b2;
+$backgroundColor-working--light: $textСolor-form;
 
 // font-size
 $fontSize-title_page:    27px;
