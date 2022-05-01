@@ -4,3 +4,33 @@
   padding: 0;
   list-style-type: none;
 }
+
+.size-modal__item {
+  margin-right: 7px;
+}
+
+.size-modal__input[type="radio"] {
+  display: none;
+}
+
+.size-modal__name {
+  display: inline-block;
+  width: 82px;
+  height: 52px;
+  padding: 18px 0;
+  cursor: pointer;
+  font-size: $fontSize-medium_small;
+  text-align: center;
+  line-height: 16px;
+  font-weight: 700;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+}
+
+.size-modal__item .size-modal__name:hover {
+  border: 1px solid $backgroundColor-button;
+}
+
+.size-modal__item .size-modal__input[type="radio"]:checked + .size-modal__name {
+  border: 1px solid #62d1ba;
+}

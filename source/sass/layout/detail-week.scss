@@ -7,6 +7,28 @@
 }
 
 .detail-week__list {
-  margin: 0;
+  width: 100%;
+  padding-top: 28px;
   line-height: $lineHeight-medium_small;
+}
+
+.detail-week__item {
+  box-shadow: 0 1px 0 0 #ececec;
+}
+
+.detail-week__row {
+  padding: 12px 32px 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .detail-week {
+    width: 292px;
+    padding-top: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .detail-week {
+    margin-left: 15%;
+  }
 }

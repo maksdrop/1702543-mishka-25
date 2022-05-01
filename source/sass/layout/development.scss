@@ -1,12 +1,26 @@
 .development {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 22px;
 }
 
 .development__title {
   margin: 0;
+  padding: 0 14px;
   font-size: $fontSize-medium_big;
   line-height: $lineHeight-small_big;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.development__link {
+  padding: 0 14px;
+  line-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .development {
+    padding: 0;
+  }
 }

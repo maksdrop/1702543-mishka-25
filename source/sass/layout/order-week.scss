@@ -1,5 +1,4 @@
 .order-week {
-  padding-top: 28px;
   font-weight: 700;
 }
 
@@ -9,6 +8,33 @@
 }
 
 .order-week__button {
+  width: 260px;
+  margin-top: 25px;
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.order-week__button--theme {
   font-size: $fontSize-medium;
   line-height: $lineHeight-medium_small;
+  background-color: $backgroundColor-body;
+  border: 2px solid #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .order-week {
+    width: 292px;
+    text-align: center;
+  }
+
+  .order-week__button {
+    width: 292px;
+    margin-top: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-week {
+    margin-left: 15%;
+  }
 }

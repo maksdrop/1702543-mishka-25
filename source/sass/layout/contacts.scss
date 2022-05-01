@@ -1,5 +1,6 @@
 .contacts {
   padding-top: 89px;
+  margin-bottom: 39px;
 }
 
 .contacts__title {
@@ -7,28 +8,62 @@
   line-height: $lineHeight-medium_big;
 }
 
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 28px;
+}
+
 .contacts__address {
+  display: flex;
+  padding-top: 42px;
   font-size: $fontSize-small-medium;
   line-height: $lineHeight-medium_big;
 }
 
 .contacts__email {
-  margin: 0;
+  display: flex;
+  font-size: $fontSize-small-medium;
+  line-height: $lineHeight-medium_big;
+}
 
-  &--link {
-    color: $textСolor-secondary;
-    text-decoration: none;
+.contacts__email--link {
+  position: relative;
+  margin-left: 36px;
+  color: $textСolor-secondary;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border-bottom: 1px solid #62d1ba;
+    width: 100%;
   }
+}
+
+.contacts__email-name {
+  margin: 0;
 }
 
 .contacts__direction {
   margin: 0;
 }
 
+.contacts__direction--locality {
+  padding-left: 36px;
+}
+
 .contacts__button {
   display: block;
+  width: 260px;
+  height: 52px;
+  margin: 0 auto;
+  margin-top: 41px;
   font-size: $fontSize-medium;
   line-height: $lineHeight-medium_small;
+  background-color: $backgroundColor-body;
 }
 
 @media (min-width: $tablet-width) {
@@ -38,13 +73,17 @@
     margin-bottom: 57px;
   }
 
-  .contacts__address {
-    display: flex;
-    justify-content: space-between;
+  .contacts__container {
+    flex-direction: row;
   }
 
-  .contacts__direction {
-    width: 330px;
+  .contacts__email {
+    margin-right: 52px;
+  }
+
+  .contacts__address {
+    display: flex;
+    padding: 0;
   }
 
   .contacts__button {
@@ -63,10 +102,15 @@
 
   .contacts__wrapper {
     grid-area: contacts;
+    margin-left: 160px;
+  }
+
+  .contacts__container {
+    flex-direction: column;
   }
 
   .contacts__address {
-    flex-direction: column;
+    padding-top: 33px;
   }
 
   .contacts__map {
@@ -75,5 +119,6 @@
 
   .contacts__button {
     grid-area: button;
+    margin-left: 160px;
   }
 }
