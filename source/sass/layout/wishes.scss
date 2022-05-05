@@ -2,8 +2,27 @@
   padding-top: 34px;
 }
 
+.wishes__title {
+  margin-right: 60px;
+}
+
+.wishes__title::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 60px;
+  width: 100%;
+  height: 1px;
+  background-color: #62d1ba;
+}
+
 .wishes__text {
+  margin-top: 22px;
+  border: 2px solid $textСolor-secondary;
+  resize: none;
+
   &::placeholder {
+    padding: 17px;
     font-size: $fontSize-medium_small;
     line-height: $lineHeight-small_big;
     color: $textСolor-main;
@@ -14,5 +33,28 @@
 @media (min-width: $tablet-width) {
   .wishes {
     padding-top: 50px;
+  }
+
+  .wishes__title {
+    margin-right: 129px;
+  }
+
+  .wishes__title::after {
+    content: none;
+  }
+
+  .wishes__text::placeholder {
+    font-size: $fontSize-medium_big;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wishes__title {
+    margin-right: 75px;
+  }
+
+  .wishes__text {
+    width: 700px;
+    box-sizing: border-box;
   }
 }

@@ -3,14 +3,17 @@
 }
 
 .order-week__price {
-  margin: 0;
+  display: block;
+  margin-bottom: 25px;
   font-size: $fontSize-medium_small;
+  text-align: center;
 }
 
 .order-week__button {
+  display: block;
   width: 260px;
-  margin-top: 25px;
-  padding: 16px 0;
+  margin: 0 auto;
+  padding: 14px 0;
   box-sizing: border-box;
 }
 
@@ -30,11 +33,5 @@
   .order-week__button {
     width: 292px;
     margin-top: 33px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .order-week {
-    margin-left: 15%;
   }
 }

@@ -10,15 +10,16 @@
 
 .feedback__author {
   padding-top: 33px;
-}
-
-.feedback__author-name {
   font-size: $fontSize-medium_small;
   line-height: $lineHeight-medium_big;
 }
 
+.feedback__author-name {
+  display: block;
+  font-weight: 700;
+}
+
 .feedback__author-instagram {
-  font-size: $fontSize-medium_small;
   text-decoration: none;
   color: $textСolor-secondary;
 }
@@ -34,7 +35,7 @@
 
 .feedback__button-center {
   width: 260px;
-  min-height: 52px;
+  padding: 14px;
   font-size: $fontSize-medium;
   line-height: $lineHeight-medium_small;
   background-color: $backgroundColor-body;
@@ -63,6 +64,8 @@
   .feedback__author {
     grid-area: author;
     padding-top: 61px;
+    font-size: $fontSize-medium;
+    line-height: $lineHeight-medium;
   }
 
   .feedback__switch {
@@ -86,5 +89,10 @@
 
   .feedback__title {
     font-size: 52px;
+  }
+
+  .feedback__author {
+    font-size: $fontSize-medium_small;
+    line-height: $lineHeight-medium_big;
   }
 }

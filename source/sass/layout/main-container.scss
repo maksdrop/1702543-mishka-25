@@ -3,6 +3,9 @@
 }
 
 .main__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 226px;
   background-color: $backgroundColor-secondary;
 }
@@ -11,10 +14,4 @@
   font-size: $fontSize-title_page;
   line-height: $lineHeight-medium_big;
   text-align: center;
-}
-
-@media (min-width: $tablet-width) {
-  .main__title {
-    padding-top: 100px;
-  }
 }

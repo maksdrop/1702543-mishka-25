@@ -1,8 +1,4 @@
 .social {
-  padding-top: 31px;
-}
-
-.social__list {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -12,6 +8,9 @@
 }
 
 .social__item {
+  display: flex;
+  align-items: center;
+  height: 27px;
   padding: 0 15px;
 
   &:nth-child(1) {
@@ -21,10 +20,4 @@
 
 .social__vk {
   line-height: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .social {
-    padding: 0;
-  }
 }

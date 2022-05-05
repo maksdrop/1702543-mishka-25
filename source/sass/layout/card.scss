@@ -2,6 +2,11 @@
   padding-top: 30px;
 }
 
+.card__description {
+  padding: 28px;
+  border: 1px solid #ececec;
+}
+
 .card__title {
   margin: 0;
   font-size: $fontSize-medium_small;
@@ -9,13 +14,25 @@
 }
 
 .card__feature {
-  margin: 0;
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 17px;
   font-size: $fontSize-small;
   line-height: $lineHeight-medium_big;
 }
 
 .card__price {
+  display: block;
+  position: relative;
+  padding-top: 22px;
   color: $textСolor-main;
+  border-top: 1px solid #ececec;
+
+  &::after {
+    content: url("../img/card/basket.svg");
+    position: absolute;
+    right: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {

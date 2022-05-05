@@ -18,13 +18,13 @@
   width: 82px;
   height: 52px;
   padding: 18px 0;
+  box-sizing: border-box;
   cursor: pointer;
   font-size: $fontSize-medium_small;
   text-align: center;
   line-height: 16px;
   font-weight: 700;
   border: 1px solid #ececec;
-  box-sizing: border-box;
 }
 
 .size-modal__item .size-modal__name:hover {

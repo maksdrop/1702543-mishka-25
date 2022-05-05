@@ -53,14 +53,15 @@
 
 .contacts__direction--locality {
   padding-left: 36px;
+  font-style: normal;
 }
 
 .contacts__button {
   display: block;
   width: 260px;
-  height: 52px;
   margin: 0 auto;
   margin-top: 41px;
+  padding: 14px;
   font-size: $fontSize-medium;
   line-height: $lineHeight-medium_small;
   background-color: $backgroundColor-body;
