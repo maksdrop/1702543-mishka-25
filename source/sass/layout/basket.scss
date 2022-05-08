@@ -1,0 +1,34 @@
+.basket {
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
+
+.basket__link {
+  padding: 27px 30px 27px 76px;
+}
+
+.basket__icon {
+  position: absolute;
+  left: 30px;
+  padding-top: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .basket {
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    box-shadow: none;
+  }
+
+  .basket__link {
+    padding: 10px;
+  }
+
+  .basket__link span {
+    padding-left: 26px;
+  }
+
+  .basket__icon {
+    position: static;
+  }
+}

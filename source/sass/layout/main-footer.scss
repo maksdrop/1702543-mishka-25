@@ -1,11 +1,23 @@
 .main-footer {
-  min-height: 160px;
+  padding-top: 31px;
+  padding-bottom: 24px;
   background-color: $backgroundColor-secondary;
 }
 
+
 @media (min-width: $tablet-width) {
+  .main-footer {
+    display: flex;
+    align-items: center;
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+
   .main-footer__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 1150px;
+    height: 34px;
   }
 }

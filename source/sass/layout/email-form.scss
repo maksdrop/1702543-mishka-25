@@ -2,10 +2,31 @@
   padding-top: 34px;
 }
 
+.email-form__title {
+  margin-right: 78px;
+  white-space: nowrap;
+}
+
+.email-form__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 78px;
+  width: 100%;
+  height: 1px;
+  background-color: #62d1ba;
+}
+
 .email-form__input {
+  width: 100%;
+  height: 52px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid $textСolor-main;
   background-image: url("../img/form/mail.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 2px center;
 
   &::placeholder {
     font-size: $fontSize-medium_small;
@@ -17,6 +38,40 @@
 
 @media (min-width: $tablet-width) {
   .email-form {
+    padding-bottom: 50px;
     background: #f1f1f1;
+  }
+
+  .email-form__title {
+    margin-right: 114px;
+  }
+
+  .email-form__title::after {
+    content: none;
+  }
+
+  .email-form__input {
+    background-color: #f1f1f1;
+    background-position: right 22px center;
+
+    &::placeholder {
+      padding-left: 18px;
+      font-size: $fontSize-medium_big;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__reset-container--email-form {
+    width: 750px;
+  }
+
+  .email-form__title {
+    margin-right: 62px;
+  }
+
+  .email-form__input {
+    width: 700px;
+    background-position: right 4px center;
   }
 }

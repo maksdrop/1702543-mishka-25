@@ -9,15 +9,52 @@
 }
 
 .advantages__subtitle {
-  width: 300px;
+  width: 260px;
   margin: 0;
+  padding-top: 22px;
   font-size: $fontSize-medium_small;
   line-height: $lineHeight-medium_small;
+}
+
+.advantages__item {
+  padding-top: 30px;
+}
+
+.advantages__image--ecology {
+  padding-left: 8px;
+}
+
+.advantages__image--likes {
+  padding-left: 7px;
+}
+
+.advantages__image--hand {
+  padding-left: 3px;
+}
+
+.advantages__image--support {
+  margin-left: -6px;
+}
+
+.advantages__image--gift {
+  padding-left: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__subtitle {
+    min-width: 300px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin: 0 160px;
   }
 }

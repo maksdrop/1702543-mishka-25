@@ -1,0 +1,31 @@
+.catalog-nav {
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
+
+.catalog-nav__link {
+  padding: 27px 30px 27px 76px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-nav {
+    padding: 21px 0 0 40px;
+    box-shadow: none;
+  }
+
+  .catalog-nav__link {
+    padding: 0;
+    font-size: $fontSize-small_big;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-nav {
+    padding: 32px 0 32px 40px;
+    border-right: 1px solid #e6e6e6;
+  }
+
+  .catalog-nav__link {
+    padding: 10px;
+    font-size: $fontSize-medium_small;
+  }
+}

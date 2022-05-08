@@ -2,10 +2,30 @@
   padding-top: 34px;
 }
 
+.phone__title {
+  margin-right: 60px;
+}
+
+.phone__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  width: 100%;
+  height: 1px;
+  background-color: #62d1ba;
+}
+
 .phone__input {
+  width: 100%;
+  height: 52px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid $textСolor-main;
   background-image: url("../img/form/phone.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 7px center;
 
   &::placeholder {
     font-size: $fontSize-medium_small;
@@ -18,5 +38,38 @@
 @media (min-width: $tablet-width) {
   .phone {
     background: #f1f1f1;
+  }
+
+  .phone__title {
+    margin-right: 136px;
+  }
+
+  .phone__title::after {
+    content: none;
+  }
+
+  .phone__input {
+    background-color: #f1f1f1;
+    background-position: right 26px center;
+
+    &::placeholder {
+      padding-left: 17px;
+      font-size: $fontSize-medium_big;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__reset-container--phone {
+    width: 750px;
+  }
+
+  .phone__title {
+    margin-right: 83px;
+  }
+
+  .phone__input {
+    width: 700px;
+    background-position: right 8px center;
   }
 }

@@ -1,0 +1,16 @@
+.sale {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .sale {
+    padding-top: 20px;
+    padding-left: 25px;
+    display: block;
+  }
+
+  .sale__link {
+    padding: 10px;
+    font-size: $fontSize-small_big;
+  }
+}

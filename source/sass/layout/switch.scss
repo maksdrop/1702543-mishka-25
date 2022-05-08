@@ -1,3 +1,31 @@
 .switch {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+}
+
+.switch__back {
+  padding: 13px 40px;
+}
+
+.switch__forward {
+  padding: 13px 40px;
+  border-left: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .switch {
+    border: none;
+  }
+
+  .switch__back {
+    padding: 0;
+  }
+
+  .switch__forward {
+    border: none;
+    padding: 0 19px 0 37px;
+  }
 }

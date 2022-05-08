@@ -1,17 +1,39 @@
 .client {
   padding-top: 33px;
+  box-sizing: border-box;
+}
+
+.client__title {
+  margin-right: 60px;
+}
+
+.client__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  width: 100%;
+  height: 1px;
+  background-color: #62d1ba;
 }
 
 .client__name {
   display: flex;
   flex-direction: column;
-  font-size: $fontSize-medium_small;
-  line-height: $lineHeight-small_big;
-  font-weight: 700;
-  color: $textСolor-main;
+  padding-top: 28px;
+}
+
+.client__name--indent {
+  padding-top: 21px;
 }
 
 .client__input {
+  min-height: 52px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid $textСolor-main;
+
   &::placeholder {
     font-size: $fontSize-medium_small;
     line-height: $lineHeight-small_big;
@@ -23,5 +45,34 @@
 @media (min-width: $tablet-width) {
   .client {
     min-height: 200px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .client__title {
+    margin-right: 125px;
+  }
+
+  .client__title::after {
+    content: none;
+  }
+
+  .client__name {
+    flex-direction: row;
+    align-items: baseline;
+    height: 52px;
+    padding-top: 0;
+  }
+
+  .client__name--indent {
+    padding-top: 24px;
+  }
+
+  .client__control {
+    margin-right: 25px;
+  }
+
+  .client__input::placeholder {
+    font-size: $fontSize-medium_big;
   }
 }
