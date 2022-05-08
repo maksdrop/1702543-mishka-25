@@ -1,20 +1,73 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
   margin: 0 auto;
-  min-height: 79px;
   background-color: $backgroundColor-body;
   font-weight: 700;
   font-size: $fontSize-medium_small;
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  box-shadow: 0 1px 0 #ececec;
+}
+
+.main-nav__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo"
+    "catalog"
+    "knitwork"
+    "search"
+    "basket";
+}
+
+.main-nav__catalog {
+  grid-area: catalog;
+}
+
+.main-nav__knitwork {
+  grid-area: knitwork;
 }
 
 .main-nav__logo {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
+  grid-area: logo;
+}
+
+.main-nav__search {
+  grid-area: search;
+}
+
+.main-nav__basket {
+  grid-area: basket;
+}
+
+.main-nav__offset-1 {
+  grid-area: offset-1;
+}
+
+.main-nav__offset-2 {
+  grid-area: offset2;
+}
+
+.main-nav__hr {
+  grid-area: hr;
+}
+
+.main-nav__offset-3 {
+  grid-area: offset3;
+}
+
+.main-nav__new {
+  grid-area: new;
+}
+
+.main-nav__sale {
+  grid-area: sale;
+}
+
+.main-nav__delivery {
+  grid-area: delivery;
+}
+
+.main-nav__offset-4 {
+  grid-area: offset4;
 }
 
 .main-nav__toggle {
@@ -42,15 +95,19 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .product-list__item {
+  .main-nav--closed .catalog-nav {
     display: none;
   }
 
-  .main-nav--closed .site-list__search {
+  .main-nav--closed .knitwork {
     display: none;
   }
 
-  .main-nav--closed .site-list__basket {
+  .main-nav--closed .search {
+    display: none;
+  }
+
+  .main-nav--closed .basket {
     display: none;
   }
 }
@@ -80,75 +137,89 @@
   }
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .main-nav__link {
   display: block;
   text-decoration: none;
   color: $textСolor-main;
 }
 
-.main-nav__free {
-  display: none;
-  margin: 0;
-}
-
 @media (min-width: $tablet-width) {
   .main-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     box-shadow: none;
   }
 
+  .main-nav__container {
+    grid-template-columns: 200px 200px minmax(82px, 1fr) 314px;
+    grid-template-rows: 1fr 1px 1fr;
+    grid-template-areas:
+      "logo . search basket"
+      "hr hr hr hr"
+      "catalog knitwork . delivery";
+  }
+
+
   .main-nav__logo {
-    justify-content: start;
     margin-left: 48px;
-    order: -3;
+  }
+
+  .main-nav__hr {
+    background-color: #e0e0e0;
+  }
+
+  .main-nav__link {
+    display: inline;
   }
 
   .main-nav__toggle {
     display: none;
   }
-
-  .main-nav__free {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 50px;
-    font-size: $fontSize-small_big;
-    font-weight: 400;
-    background-color: #f9f9f9;
-  }
-
-  .main-nav__free--form {
-    background-color: #f1f1f1;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    grid-template-columns: 1fr 150px 1fr;
-    grid-template-areas: "product logo site"
-      "new new free";
+  .main-nav__container {
+    grid-template-columns: 1fr 235px 235px 210px 154px 316px 1fr;
+    grid-template-rows: 1fr 1px 1fr;
+    gap: 0 0;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "offset-1 catalog knitwork logo search basket offset2"
+      "hr hr hr hr hr hr hr"
+      "offset3 new sale . . delivery offset4";
+  }
+
+  .main-nav__offset-1 {
+    grid-area: offset-1;
+  }
+
+  .main-nav__offset-2 {
+    grid-area: offset2;
+  }
+
+  .main-nav__hr {
+    grid-area: hr;
+  }
+
+  .main-nav__offset-3 {
+    grid-area: offset3;
+  }
+
+  .main-nav__new {
+    grid-area: new;
+  }
+
+  .main-nav__sale {
+    grid-area: sale;
+  }
+
+  .main-nav__delivery {
+    grid-area: delivery;
+  }
+
+  .main-nav__offset-4 {
+    grid-area: offset4;
   }
 
   .main-nav__logo {
     justify-content: center;
-    grid-area: logo;
-    margin: 0;
-    border-bottom: 1px solid #e0e0e0;
-  }
-
-  .main-nav__free {
-    grid-area: free;
-    padding-right: calc(50vw - 573px);
-  }
-
-  .main-nav__free--color {
-    background-color: #f1f1f1;
   }
 }

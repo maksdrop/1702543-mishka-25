@@ -1,0 +1,19 @@
+.delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .delivery {
+    display: block;
+  }
+
+  .delivery__span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 50px;
+    font-size: $fontSize-small_big;
+    font-weight: 400;
+  }
+}

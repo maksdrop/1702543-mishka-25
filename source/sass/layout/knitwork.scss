@@ -1,0 +1,29 @@
+.knitwork {
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
+
+.knitwork__link {
+  padding: 27px 30px 27px 76px;
+}
+
+@media (min-width: $tablet-width) {
+  .knitwork {
+    padding: 21px 0 0 8px;
+    box-shadow: none;
+  }
+
+  .knitwork__link {
+    padding: 10px;
+    font-size: $fontSize-small_big;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knitwork {
+    padding: 32px 0 32px 25px;
+  }
+
+  .knitwork__link {
+    font-size: $fontSize-medium_small;
+  }
+}
