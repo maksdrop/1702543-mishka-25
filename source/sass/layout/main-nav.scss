@@ -150,7 +150,7 @@
 
   .main-nav__container {
     grid-template-columns: 200px 200px minmax(82px, 1fr) 314px;
-    grid-template-rows: 1fr 1px 1fr;
+    grid-template-rows: 1fr 1px minmax(45px, max-content);
     grid-template-areas:
       "logo . search basket"
       "hr hr hr hr"
@@ -178,7 +178,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__container {
     grid-template-columns: 1fr 235px 235px 210px 154px 316px 1fr;
-    grid-template-rows: 1fr 1px 1fr;
+    grid-template-rows: 1fr 1px minmax(45px, max-content);
     gap: 0 0;
     grid-auto-flow: row;
     grid-template-areas:

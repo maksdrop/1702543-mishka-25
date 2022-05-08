@@ -1,5 +1,9 @@
 .product-week {
   padding-top: 31px;
+  padding-bottom: 42px;
+  background-image: url("../img/slice/slice-mobile.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 
 .product-week__title {
@@ -25,6 +29,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product-week {
+    padding-bottom: 69px;
+    background-image: url("../img/slice/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+
   .product-week__wrapper {
     position: relative;
     display: grid;
@@ -66,6 +77,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product-week {
+    background-repeat: no-repeat;
+    background-size: 1050px 23px;
+  }
+
   .product-week__wrapper {
     grid-template:
       "subtitle title"

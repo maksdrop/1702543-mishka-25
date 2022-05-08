@@ -1,5 +1,9 @@
 .about {
   padding-top: 31px;
+  padding-bottom: 51px;
+  background-image: url("../img/slice/slice-mobile.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 
 .about__title {
@@ -10,6 +14,9 @@
 @media (min-width: $tablet-width) {
   .about {
     padding-top: 55px;
+    background-image: url("../img/slice/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
   }
 
   .about__title {
@@ -19,6 +26,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about {
+    background-repeat: no-repeat;
+    background-size: 1050px 23px;
+  }
+
   .about__title {
     margin-left: 160px;
   }
