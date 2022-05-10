@@ -10,9 +10,14 @@
 }
 
 .working-wrapper {
-  background-image: url("../img/working/hero.png");
+  background-image: url("../img/working/hero-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/working/hero-mobile@2x.png");
+    background-size: auto 373px;
+  }
 }
 
 .working__title {
@@ -62,7 +67,7 @@
   .working::after {
     content: "";
     position: absolute;
-    bottom: -14px;
+    bottom: -13px;
     left: 0;
     right: 0;
     height: 24px;
@@ -70,6 +75,17 @@
     background-repeat: repeat-x;
     background-size: 778px 24px;
     background-position: 50% 50%;
+  }
+
+  .working-wrapper {
+    background-image: url("../img/working/hero-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/working/hero-tablet@2x.png");
+      background-size: auto 746px;
+    }
   }
 
   .working__title {
@@ -97,6 +113,16 @@
     bottom: -17px;
     height: 34px;
     background-size: 1050px 34px;
+  }
+
+  .working-wrapper {
+    background-image: url("../img/working/hero-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/working/hero-desktop@2x.png");
+    }
   }
 
   .working__title {

@@ -26,12 +26,23 @@
 
 @media (min-width: $tablet-width) {
   .order-week {
-    width: 292px;
-    text-align: center;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    align-self: end;
+    margin: 0 auto;
+    padding-top: 109px;
+    padding-right: 42px;
   }
 
   .order-week__button {
     width: 292px;
     margin-top: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-week {
+    width: 292px;
+    margin-left: 175px;
   }
 }
