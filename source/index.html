@@ -83,11 +83,13 @@
         </div>
       </section>
       <section class="product-week">
-        <div class="product-week__wrapper content-wrapper">
-          <h2 class="product-week__title title">Вязаные корзинки</h2>
-          <h3 class="product-week__subtitle">Товар недели</h3>
-          <div class="product-week__detail detail-week">
-            <p class="product-week__description">Экологически чистая пряжа,
+        <div class="product-week__wrapper detail-week content-wrapper">
+          <div class="detail-week__wrapper-title">
+            <h2 class="detail-week__title title">Вязаные корзинки</h2>
+            <h3 class="detail-week__subtitle">Товар недели</h3>
+          </div>
+          <div class="detail-week__wrapper">
+            <p class="detail-week__description">Экологически чистая пряжа,
               ручная работа. Доступны в шести расцветках и трёх размерах.</p>
             <table class="detail-week__list">
               <tr class="detail-week__item">
@@ -104,7 +106,13 @@
               </tr>
             </table>
           </div>
-          <img class="product-week__image" src="img/product-week/product-week.png" alt="Товар недели.">
+          <div class="product-week__wrapper-image">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/product-week/product-week-desktop.jpg 1x, img/product-week/product-week-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/product-week/product-week-tablet.jpg 1x, img/product-week/product-week-tablet@2x.jpg 2x">
+              <img class="product-week__image" src="img/product-week/product-week-mobile.jpg" srcset="img/product-week/product-week-mobile@2x.jpg 2x" width="260" height="315" alt="Товар недели.">
+            </picture>
+          </div>
           <div class="product-week__order order-week">
             <span class="order-week__price">Цена: 990 руб.</span>
             <button class="order-week__button order-week__button--theme button">заказать</button>

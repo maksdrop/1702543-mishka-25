@@ -6,22 +6,12 @@
   background-position: bottom;
 }
 
-.product-week__title {
-  margin: 0;
-  font-size: $fontSize-subtitle;
-  line-height: $lineHeight-medium_big;
-  color: $textСolor-main;
-}
-
-.product-week__subtitle {
-  margin: 0;
-  font-size: $fontSize-medium_small;
-  line-height: $lineHeight-medium_small;
-  color: $textСolor-form;
+.product-week__wrapper-image {
+  padding-top: 28px;
 }
 
 .product-week__image {
-  padding-top: 28px;
+  width: 100%;
 }
 
 .product-week__order {
@@ -30,6 +20,7 @@
 
 @media (min-width: $tablet-width) {
   .product-week {
+    padding-top: 40px;
     padding-bottom: 69px;
     background-image: url("../img/slice/zigzag-line-desktop.svg");
     background-repeat: repeat-x;
@@ -37,73 +28,34 @@
   }
 
   .product-week__wrapper {
-    position: relative;
-    display: grid;
-    grid-template:
-      "title subtitle"
-      "detail image-week"
-      "order image-week";
-  }
-
-  .product-week__title {
-    grid-area: title;
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .product-week__subtitle {
-    grid-area: subtitle;
     display: flex;
-    align-items: center;
-    width: 100px;
-    margin-left: auto;
-    text-align: center;
-    line-height: 17px;
+    flex-direction: column;
   }
 
-  .product-week__detail {
-    grid-area: detail;
-  }
-
-  .product-week__image {
-    grid-area: image-week;
+  .product-week__wrapper-image {
+    grid-row: 2/4;
     padding-top: 50px;
   }
 
   .product-week__order {
-    grid-area: order;
     padding-top: 57px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-week {
-    background-repeat: no-repeat;
-    background-size: 1050px 23px;
+    padding-top: 115px;
   }
 
   .product-week__wrapper {
-    grid-template:
-      "subtitle title"
-      "subtitle detail"
-      "subtitle order";
-    grid-template-columns: 170px 1fr;
+    position: relative;
   }
 
-  .product-week__title {
-    font-size: 53px;
-    line-height: 57px;
-  }
-
-  .product-week__subtitle {
-    display: block;
-    margin: 0;
-    padding-top: 10px;
-  }
-
-  .product-week__image {
+  .product-week__wrapper-image {
     position: absolute;
-    right: 0;
-    top: 0;
+    top: -61px;
+    right: 50px;
+    z-index: -1;
+    padding-top: 0;
   }
 }
