@@ -2,6 +2,11 @@
   padding-top: 30px;
 }
 
+.card__image {
+  display: block;
+  width: 100%;
+}
+
 .card__description {
   padding: 28px;
   border: 1px solid #ececec;
@@ -24,7 +29,8 @@
 .card__price {
   display: block;
   position: relative;
-  padding-top: 22px;
+  padding-top: 23px;
+  font-weight: 700;
   color: $textСolor-main;
   border-top: 1px solid #ececec;
 
@@ -36,13 +42,57 @@
 }
 
 @media (min-width: $tablet-width) {
+  .card {
+    padding-top: 54px;
+  }
+
   .card__container {
     display: flex;
+  }
+
+  .card__image-link {
+    width: 50%;
+  }
+
+  .card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .card__title {
+    font-size: 20px;
+  }
+
+  .card__feature {
+    font-size: $fontSize-small_big;
+  }
+
+  .card__price {
+    font-size: $fontSize-medium_small;
   }
 }
 
 @media (min-width: $desktop-width) {
   .card__container {
     flex-direction: column;
+  }
+
+  .card__image-link {
+    width: 100%;
+  }
+
+  .card__description {
+    width: inherit;
+    padding: 27px 33px 25px 27px;
+  }
+
+  .card__feature {
+    padding-bottom: 37px;
+  }
+
+  .card__feature--bottom {
+    padding-bottom: 13px;
   }
 }

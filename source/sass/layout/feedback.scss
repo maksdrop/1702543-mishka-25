@@ -1,5 +1,5 @@
 .feedback {
-  padding-top: 58px;
+  margin-top: 58px;
 }
 
 .feedback__describe {
@@ -10,18 +10,18 @@
 
 .feedback__author {
   padding-top: 33px;
-  font-size: $fontSize-medium_small;
-  line-height: $lineHeight-medium_big;
 }
 
 .feedback__author-name {
   display: block;
+  font-size: $fontSize-medium_small;
   font-weight: 700;
 }
 
 .feedback__author-instagram {
   text-decoration: none;
   color: $textСolor-secondary;
+  line-height: $lineHeight-medium_big;
 }
 
 .feedback__switch {
@@ -43,40 +43,56 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
+    background-image: url("../img/feedback/feedback.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 82px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback/feedback@2x.jpg");
+    }
+  }
+
+  .feedback__wrapper {
     display: grid;
-    grid-template:
-      "title button"
-      "describe describe"
-      "author switch";
+    grid-template-rows: minmax(132px, max-content) minmax(159px, max-content) minmax(166px, max-content);
+    grid-template-areas:
+      "title . button"
+      "describe describe describe"
+      "author . switch";
   }
 
   .feedback__title {
     grid-area: title;
+    align-self: end;
     font-size: 43px;
     line-height: 50px;
   }
 
   .feedback__describe {
     grid-area: describe;
+    align-self: end;
     padding-top: 40px;
   }
 
   .feedback__author {
     grid-area: author;
-    padding-top: 61px;
-    font-size: $fontSize-medium;
-    line-height: $lineHeight-medium;
+    align-self: center;
+    padding-top: 0;
   }
 
   .feedback__switch {
     grid-area: switch;
+    align-items: center;
     margin: 0;
-    margin-left: auto;
-    margin-top: auto;
+  }
+
+  .feedback__button {
+    grid-area: button;
+    align-self: end;
   }
 
   .feedback__button-center {
-    grid-area: button;
     width: 175px;
     margin-left: auto;
   }
@@ -84,6 +100,10 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
+    margin-top: 90px;
+  }
+
+  .feedback__wrapper {
     margin-left: 160px;
   }
 

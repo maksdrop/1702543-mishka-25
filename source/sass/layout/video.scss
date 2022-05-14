@@ -1,19 +1,24 @@
-.video {
+.video__wrapper {
   position: relative;
 }
 
 .video__image {
+  display: block;
   position: relative;
-
-  background-image: url("../img/production/video-mobile.jpg");
-  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .video__play {
   position: absolute;
-  top: 25%;
-  left: 25%;
-  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 101px;
+  height: 77px;
+  margin: auto;
   padding: 0;
+  background-image: url("../img/production/play.svg");
+  background-color: transparent;
   border: 0;
 }

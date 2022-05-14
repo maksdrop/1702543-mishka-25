@@ -152,11 +152,18 @@
     grid-template-columns: 200px 200px minmax(82px, 1fr) 314px;
     grid-template-rows: 1fr 1px minmax(45px, max-content);
     grid-template-areas:
-      "logo . search basket"
+      "logo offset1 search basket"
       "hr hr hr hr"
       "catalog knitwork . delivery";
+    background-color: #f9f9f9;
   }
 
+  .main-nav__offset-1,
+  .main-nav__logo,
+  .main-nav__search,
+  .main-nav__basket {
+    background-color: $backgroundColor-body;
+  }
 
   .main-nav__logo {
     margin-left: 48px;
@@ -187,9 +194,17 @@
       "offset3 new sale . . delivery offset4";
   }
 
+  .main-nav__offset-1,
+  .main-nav__catalog,
+  .main-nav__knitwork,
+  .main-nav__offset-2 {
+    background-color: $backgroundColor-body;
+  }
+
   .main-nav__offset-1 {
     grid-area: offset-1;
   }
+
 
   .main-nav__offset-2 {
     grid-area: offset2;
@@ -197,10 +212,6 @@
 
   .main-nav__hr {
     grid-area: hr;
-  }
-
-  .main-nav__offset-3 {
-    grid-area: offset3;
   }
 
   .main-nav__new {
@@ -217,6 +228,7 @@
 
   .main-nav__offset-4 {
     grid-area: offset4;
+    background-color: #f9f9f9;
   }
 
   .main-nav__logo {

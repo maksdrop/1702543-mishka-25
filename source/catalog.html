@@ -68,30 +68,54 @@
           <ul class="catalog__list">
             <li class="catalog__item card">
               <div class="card__container">
-                <img src="img/catalog/catalog-mobile-1.jpg" width="260" height="195" alt="Зайчик-попрыгайчик.">
+                <a href="" class="card__image-link">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/catalog/catalog-desktop-1.png 1x, img/catalog/catalog-desktop-1@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-tablet-1.png 1x, img/catalog/catalog-tablet-1@2x.png 2x">
+                    <img class="card__image" src="img/catalog/catalog-mobile-1.png" srcset="img/catalog/catalog-mobile-1@2x.png 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
+                  </picture>
+                </a>
                 <div class="card__description">
-                  <h2 class="card__title">Зайчик-попрыгайчик</h2>
-                  <span class="card__feature">Рост 30 см, вес 200 г</span>
+                  <div class="card__description-wrapper">
+                    <h2 class="card__title">Зайчик-попрыгайчик</h2>
+                    <span class="card__feature">Рост 30 см, вес 200 г</span>
+                  </div>
                   <span class="card__price">1 200 руб.</span>
                 </div>
               </div>
             </li>
             <li class="catalog__item card">
               <div class="card__container">
-                <img src="img/catalog/catalog-mobile-2.jpg" width="260" height="195" alt="Корзинка для белья.">
+                <a href="" class="card__image-link">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/catalog/catalog-desktop-2.png 1x, img/catalog/catalog-desktop-2@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-tablet-2.png 1x, img/catalog/catalog-tablet-2@2x.png 2x">
+                    <img class="card__image" src="img/catalog/catalog-mobile-2.png" srcset="img/catalog/catalog-mobile-2@2x.png 2x" width="260" height="195" alt="Корзинка для белья.">
+                  </picture>
+                </a>
                 <div class="card__description">
-                  <h2 class="card__title">Корзинка для белья</h2>
-                  <span class="card__feature">Диаметр 15 см, высота 10 см</span>
+                  <div class="card__description-wrapper">
+                    <h2 class="card__title">Корзинка для белья</h2>
+                    <span class="card__feature">Диаметр 15 см, высота 10 см</span>
+                  </div>
                   <span class="card__price">690 руб.</span>
                 </div>
               </div>
             </li>
             <li class="catalog__item card">
               <div class="card__container">
-                <img src="img/catalog/catalog-mobile-3.jpg" width="260" height="195" alt="Большая корзинка для игрушек.">
+                <a href="" class="card__image-link">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/catalog/catalog-desktop-3.png 1x, img/catalog/catalog-desktop-3@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-tablet-3.png 1x, img/catalog/catalog-tablet-3@2x.png 2x">
+                    <img class="card__image" src="img/catalog/catalog-mobile-3.png" srcset="img/catalog/catalog-mobile-3@2x.png 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
+                  </picture>
+                </a>
                 <div class="card__description">
-                  <h2 class="card__title">Большая корзинка<br> для игрушек</h2>
-                  <span class="card__feature">Диаметр 30 см, высота 30 см</span>
+                  <div class="card__description-wrapper">
+                    <h2 class="card__title">Большая корзинка<br> для игрушек</h2>
+                    <span class="card__feature card__feature--bottom">Диаметр 30 см, высота 30 см</span>
+                  </div>
                   <span class="card__price">1 500 руб.</span>
                 </div>
               </div>
@@ -108,10 +132,14 @@
             <h2 class="production__title--decor">Процесс производства</h2>
           </div>
           <div class="production__video video">
-            <video class="video__image"></video>
-            <button class="video__play" type="button">
-              <img src="img/production/play.svg" alt="Воспроизвести.">
-            </button>
+            <div class="video__wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/production/video-desktop.png 1x, img/production/video-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/production/video-tablet.png 1x, img/production/video-tablet@2x.png 2x">
+                <img class="video__image" src="img/production/video-mobile.png" srcset="img/production/video-mobile.png@2x.png 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
+              </picture>
+              <button class="video__play" type="button"></button>
+            </div>
           </div>
           <div class="production__description">
             <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>

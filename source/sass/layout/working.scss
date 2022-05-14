@@ -1,12 +1,13 @@
 .working {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
   z-index: 0;
   width: 100%;
   padding-top: 90px;
   box-sizing: border-box;
-  justify-content: space-between;
+  background-color: #f9f9f9;
 }
 
 .working-wrapper {

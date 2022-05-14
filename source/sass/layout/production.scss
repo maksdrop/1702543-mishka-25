@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .production {
+    padding-top: 53px;
+  }
+
   .production__container {
     display: flex;
     flex-direction: column;
@@ -60,9 +64,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .production {
+    padding-top: 57px;
+  }
+
   .production__container {
     display: grid;
-    grid-template: "video title"
+    grid-template-columns: 682px 1fr;
+    grid-template-areas:
+      "video title"
       "video description";
     flex-direction: row;
   }

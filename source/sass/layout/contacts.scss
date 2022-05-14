@@ -95,15 +95,20 @@
 @media (min-width: $desktop-width) {
   .contacts {
     display: grid;
-    grid-template:
+    grid-template-columns: 464px 527px;
+    column-gap: 59px;
+    grid-template-areas:
       "contacts map"
       "button map";
+    width: 1050px;
+    margin: 0 auto;
     margin-bottom: 105px;
   }
 
   .contacts__wrapper {
     grid-area: contacts;
     margin-left: 160px;
+    padding: 0;
   }
 
   .contacts__container {
@@ -116,10 +121,13 @@
 
   .contacts__map {
     grid-area: map;
+    margin-left: auto;
   }
 
   .contacts__button {
     grid-area: button;
+    align-self: end;
+    height: 52px;
     margin-left: 160px;
   }
 }
