@@ -10,6 +10,16 @@
   position: absolute;
   left: 30px;
   padding-top: 3px;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: $backgroundColor-modal;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
