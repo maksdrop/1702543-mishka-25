@@ -14,8 +14,18 @@
 
 .card__title {
   margin: 0;
+  cursor: pointer;
   font-size: $fontSize-medium_small;
+  font-weight: 700;
   color: $textСolor-main;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__feature {
@@ -77,6 +87,14 @@
 @media (min-width: $desktop-width) {
   .card__container {
     flex-direction: column;
+  }
+
+  .card__container:hover .card__description {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card__container:active .card__description {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
   .card__image-link {

@@ -15,6 +15,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .map {
+    padding-top: 0;
+  }
+
   .map__image {
     width: 527px;
   }
