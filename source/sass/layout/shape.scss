@@ -40,6 +40,15 @@
   box-sizing: border-box;
   border: 2px solid $textСolor-secondary;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .shape__input[type="radio"]:checked + .shape__mark::before {

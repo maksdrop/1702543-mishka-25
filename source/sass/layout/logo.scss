@@ -2,5 +2,69 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 22px 0;
+  padding-top: 21px;
+  padding-bottom: 17px;
+}
+
+.logo__mobile {
+  display: inline;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__tablet,
+.logo__desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    padding-top: 21px;
+    padding-bottom: 15px;
+  }
+
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: inline;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    padding-top: 8px;
+    padding-bottom: 2px;
+  }
+
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: inline;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

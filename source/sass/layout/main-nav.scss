@@ -38,10 +38,6 @@
   grid-area: basket;
 }
 
-.main-nav__offset-1 {
-  grid-area: offset-1;
-}
-
 .main-nav__offset-2 {
   grid-area: offset2;
 }
@@ -165,16 +161,20 @@
     background-color: $backgroundColor-body;
   }
 
-  .main-nav__logo {
-    margin-left: 48px;
-  }
-
   .main-nav__hr {
     background-color: #e0e0e0;
   }
 
   .main-nav__link {
     display: inline;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__toggle {
@@ -228,7 +228,6 @@
 
   .main-nav__offset-4 {
     grid-area: offset4;
-    background-color: #f9f9f9;
   }
 
   .main-nav__logo {

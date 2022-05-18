@@ -35,10 +35,19 @@
   height: 38px;
   box-sizing: border-box;
   border: 2px solid $textСolor-secondary;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .color-form__input[type="checkbox"]:checked + .color-form__mark::before {
-  content: url("../img/form/check.svg");
+  content: url("../img/form/check-mobile.svg");
   position: absolute;
   top: 8px;
   left: 5px;
@@ -81,6 +90,12 @@
     width: 52px;
     height: 52px;
   }
+
+  .color-form__input[type="checkbox"]:checked + .color-form__mark::before {
+    content: url("../img/form/check-tablet.svg");
+    top: 13px;
+    left: 7px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -97,7 +112,7 @@
     padding-top: 0;
   }
 
-  .color-form__name:nth-child(n+4) {
+  .color-form__name:nth-child(n+5) {
     padding-top: 24px;
   }
 }

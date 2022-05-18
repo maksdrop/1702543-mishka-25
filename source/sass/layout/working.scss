@@ -22,6 +22,7 @@
 }
 
 .working__title {
+  padding-bottom: 120px;
   text-align: center;
   font-size: $fontSize-title_page;
   line-height: $lineHeight-medium_big;
@@ -31,29 +32,63 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 120px;
   list-style-type: none;
 }
 
 .working__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
-  background-color: $backgroundColor-working;
-
-  &--light {
-    background-color: $backgroundColor-working--light;
-  }
 }
 
 .working__link {
   display: block;
+  position: relative;
   padding-top: 21px;
   padding-bottom: 31px;
   padding-left: 30px;
+  cursor: pointer;
   font-size: $fontSize-medium_big;
   color: #ffffff;
+}
+
+.working__image-interior {
+  background-color: $backgroundColor-working--light;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 36px;
+    top: 23px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/working/interior.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+}
+
+.working__image-toy {
+  background-color: $backgroundColor-working;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 27px;
+    top: 21px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/working/toy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: #46c1ae;
+  }
 }
 
 .working__item-image--light {
@@ -62,6 +97,8 @@
 
 .working__item-image {
   padding-right: 27px;
+  opacity: 0.5;
+  fill: #149080;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,6 +127,7 @@
   }
 
   .working__title {
+    padding-bottom: 372px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -98,7 +136,6 @@
     display: flex;
     margin: 0 auto;
     padding: 0 50px;
-    padding-top: 372px;
   }
 
   .working__link {
@@ -106,6 +143,15 @@
     padding-bottom: 34px;
     font-size: 20px;
     line-height: $lineHeight-medium_big;
+  }
+
+  .working__image-interior::after {
+    top: 30px;
+  }
+
+  .working__image-toy::after {
+    top: 31px;
+    right: 33px;
   }
 }
 

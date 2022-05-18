@@ -4,4 +4,14 @@
   text-transform: uppercase;
   color: $textСolor-secondary;
   border: 2px solid #444444;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $textСolor-secondary;
+    color: $backgroundColor-body;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
 }
