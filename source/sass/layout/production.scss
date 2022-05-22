@@ -12,6 +12,7 @@
 
 .production__title--image {
   margin-right: 25px;
+  fill: #63d1bb;
 }
 
 .production__title--decor {
@@ -37,6 +38,8 @@
   padding: 16px;
   font-size: $fontSize-medium;
   line-height: $lineHeight-small_medium;
+  text-decoration: none;
+  color: $textСolor-main;
   background-color: $backgroundColor-body;
 }
 
@@ -48,6 +51,14 @@
   .production__container {
     display: flex;
     flex-direction: column;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .production__title {

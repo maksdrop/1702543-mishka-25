@@ -1,9 +1,12 @@
 .main-footer {
-  padding-top: 31px;
-  padding-bottom: 24px;
+  padding-top: 25px;
+  padding-bottom: 23px;
   background-color: $backgroundColor-secondary;
 }
 
+.footer__logo {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .main-footer {
@@ -16,8 +19,23 @@
   .main-footer__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 1150px;
     height: 34px;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+
+  .footer__logo-image {
+    fill: $textСolor-main;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

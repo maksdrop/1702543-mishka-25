@@ -29,8 +29,10 @@
 
 .client__input {
   min-height: 52px;
-  width: 100%;
   padding: 0;
+  padding-left: 16px;
+  font-size: $fontSize-medium_big;
+  line-height: $lineHeight-small_big;
   border: none;
   border-bottom: 2px solid $textСolor-main;
 
@@ -39,6 +41,15 @@
     line-height: $lineHeight-small_big;
     color: $textСolor-main;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+    outline: none;
   }
 }
 
@@ -72,7 +83,11 @@
     margin-right: 25px;
   }
 
-  .client__input::placeholder {
-    font-size: $fontSize-medium_big;
+  .client__input {
+    width: 100%;
+
+    &::placeholder {
+      font-size: $fontSize-medium_big;
+    }
   }
 }

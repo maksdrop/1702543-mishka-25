@@ -5,8 +5,12 @@
   list-style-type: none;
 }
 
-.size-modal__item {
+.size-modal__list {
   margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .size-modal__input[type="radio"] {
@@ -16,8 +20,7 @@
 .size-modal__name {
   display: inline-block;
   width: 82px;
-  height: 52px;
-  padding: 18px 0;
+  padding: 17px 0;
   box-sizing: border-box;
   cursor: pointer;
   font-size: $fontSize-medium_small;
@@ -33,4 +36,10 @@
 
 .size-modal__item .size-modal__input[type="radio"]:checked + .size-modal__name {
   border: 1px solid #62d1ba;
+}
+
+@media (min-width: $tablet-width) {
+  .size-modal__name {
+    width: 112px;
+  }
 }

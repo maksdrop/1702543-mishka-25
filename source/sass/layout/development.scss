@@ -20,6 +20,18 @@
   line-height: 0;
 }
 
+.development__link-image {
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .development {
     padding: 0;

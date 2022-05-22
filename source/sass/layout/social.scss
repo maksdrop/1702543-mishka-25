@@ -13,12 +13,47 @@
   align-items: center;
   height: 27px;
   padding: 0 15px;
+}
 
-  &:nth-child(1) {
-    line-height: 0;
+.social__vk-image {
+  fill: #231f20;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.social__vk {
-  line-height: 0;
+.social__youtube-image {
+  fill: #231f20;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__telegram-image {
+  fill: #231f20;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    align-items: center;
+    margin: 0;
+  }
 }
