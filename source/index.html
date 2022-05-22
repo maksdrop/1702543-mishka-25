@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -66,7 +66,7 @@
             <form class="search__link" action="https://echo.htmlacademy.ru/" method="get">
               <label class="search__label">
                 <svg class="search__icon" width="18" height="18">
-                  <use xlink:href="img/sprite/sprite.svg#search__icon"></use>
+                  <use xlink:href="img/sprite.svg#search"></use>
                 </svg>
                 <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
               </label>
@@ -75,7 +75,7 @@
           <div class="main-nav__basket basket">
             <a class="main-nav__link basket__link" href="#">
               <svg class="basket__icon" width="21" height="18">
-                <use xlink:href="img/sprite/sprite.svg#basket__icon"></use>
+                <use xlink:href="img/sprite.svg#basket"></use>
               </svg>
               <span>Корзина: пока пуста</span>
             </a>
@@ -102,12 +102,18 @@
         <div class="working-wrapper">
           <h2 class="working__title title content-wrapper">Милые штуки ручной работы для дома</h2>
           <ul class="working__list content-wrapper">
-            <li class="working__item working__item--light">
-              <a class="working__link working__image-interior">Предметы<br> интерьера
+            <li class="working__item">
+              <a class="working__link working__item--light">Предметы<br> интерьера
+                <svg class="working__image working__image-interior" width="40" height="62">
+                  <use xlink:href="img/sprite.svg#interior"></use>
+                </svg>
               </a>
             </li>
             <li class="working__item">
-              <a class="working__link working__image-toy">Детские<br> игрушки
+              <a class="working__link working__item--dark">Детские<br> игрушки
+                <svg class="working__image working__image-toy" width="60" height="60">
+                  <use xlink:href="img/sprite.svg#toy"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -160,19 +166,19 @@
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--ecology">
                 <svg class="advantages__image advantages__image--ecology" width="33" height="38">
-                  <use xlink:href="img/sprite/sprite.svg#ecology"></use>
+                  <use xlink:href="img/sprite.svg#about-ecology"></use>
                 </svg>
                 <h3 class="advantages__subtitle">Экологически чистые материалы</h3>
               </li>
               <li class="advantages__item advantages__item--style">
                 <svg class="advantages__image advantages__image--style" width="47" height="27">
-                  <use xlink:href="img/sprite/sprite.svg#style"></use>
+                  <use xlink:href="img/sprite.svg#about-style"></use>
                 </svg>
                 <h3 class="advantages__subtitle">Скандинавский стиль по российской цене</h3>
               </li>
               <li class="advantages__item advantages__item--likes">
                 <svg class="advantages__image advantages__image--likes" width="34" height="27">
-                  <use xlink:href="img/sprite/sprite.svg#likes"></use>
+                  <use xlink:href="img/sprite.svg#about-likes"></use>
                 </svg>
                 <h3 class="advantages__subtitle">Увеличивает лайки на фотографиях</h3>
               </li>
@@ -180,19 +186,19 @@
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--hand">
                 <svg class="advantages__image advantages__image--hand" width="35" height="34">
-                  <use xlink:href="img/sprite/sprite.svg#hand"></use>
+                  <use xlink:href="img/sprite.svg#about-hand"></use>
                   </svg>
                 <h3 class="advantages__subtitle">Связано вручную с любовью и умилением</h3>
               </li>
               <li class="advantages__item advantages__item--support">
                 <svg class="advantages__image advantages__image--support" width="55" height="23">
-                  <use xlink:href="img/sprite/sprite.svg#support"></use>
+                  <use xlink:href="img/sprite.svg#about-support"></use>
                 </svg>
                 <h3 class="advantages__subtitle">Поддержка отечественного производителя</h3>
               </li>
               <li class="advantages__item advantages__item--gift">
                 <svg class="advantages__image advantages__image--gift" width="33" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite/sprite.svg#gift"></use>
+                  <use xlink:href="img/sprite.svg#about-gift"></use>
                 </svg>
                 <h3 class="advantages__subtitle">Поставляется в подарочной упаковке</h3>
               </li>
@@ -211,14 +217,14 @@
               </div>
               <div class="feedback__switch switch">
                 <a class="switch__back" href="#">
-                  <svg width="50" height="26">
-                    <use xlink:href="img/sprite/sprite.svg#switch-back"></use>
+                  <svg class="switch__image" width="50" height="26">
+                    <use xlink:href="img/sprite.svg#switch-back"></use>
                   </svg>
                   <span class="visually-hidden">Вперед.</span>
                 </a>
                 <a class="switch__forward" href="#">
-                  <svg width="50" height="26">
-                    <use xlink:href="img/sprite/sprite.svg#switch__forward"></use>
+                  <svg class="switch__image" width="50" height="26">
+                    <use xlink:href="img/sprite.svg#switch-forward"></use>
                   </svg>
                   <span class="visually-hidden">Назад.</span>
                 </a>
@@ -232,10 +238,9 @@
       </section>
       <section class="contacts">
         <div class="contacts__wrapper content-wrapper">
-
           <h2 class="contacts__title title">Контакты</h2>
           <svg class="contacts__flag" width="47" height="81">
-            <use xlink:href="img/sprite/sprite.svg#flag"></use>
+            <use xlink:href="img/sprite.svg#flag"></use>
           </svg>
           <div class="contacts__container">
             <div class="contacts__email">
@@ -256,43 +261,48 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__container content-wrapper">
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__vk" href="https://vk.com/htmlacademy">
-                <svg width="27" height="18">
-                  <use xlink:href="img/sprite/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg width="24" height="20">
-                  <use xlink:href="img/sprite/sprite.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__telegram" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg width="20" height="18">
-                  <use xlink:href="img/sprite/sprite.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <a class="footer__logo" href="#">
+          <svg class="footer__logo-image" width="102" height="34">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__vk" href="https://vk.com/htmlacademy" target="_blank">
+              <svg class="social__vk-image" width="27" height="18">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <svg class="social__youtube-image" width="24" height="20">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__telegram" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <svg class="social__telegram-image" width="20" height="18">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
         <div class="main-footer__development development">
           <span class="development__title title">Разработано</span>
-          <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34">
-              <use xlink:href="img/sprite/sprite.svg#htmlacademy"></use>
+          <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <svg class="development__link-image" width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <div class="modal">
-      <div class="modal__container content-wrapper">
-        <h2 class="modal__title title">Добавить в корзину</h2>
-        <p class="modal__choose">Выберите размер:</p>
+    <div class="modal modal__close">
+      <div class="modal__container">
+        <h2 class="modal__title title">Добавить<br> в корзину</h2>
+        <span class="modal__choose">Выберите размер:</span>
         <form action="https://echo.htmlacademy.ru" method="post">
           <ul class="modal__list-size size-modal">
             <li class="size-modal__list">

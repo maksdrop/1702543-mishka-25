@@ -48,57 +48,54 @@
   cursor: pointer;
   font-size: $fontSize-medium_big;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    padding-bottom: 36px;
+  }
 }
 
-.working__image-interior {
+.working__item--light {
   background-color: $backgroundColor-working--light;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 36px;
-    top: 23px;
-    width: 40px;
-    height: 62px;
-    background-image: url("../img/working/interior.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 
   &:hover {
     background-color: #59d5bc;
   }
 }
 
-.working__image-toy {
+.working__item--dark {
   background-color: $backgroundColor-working;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 27px;
-    top: 21px;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/working/toy.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
-  }
 
   &:hover {
     background-color: #46c1ae;
   }
 }
 
-.working__item-image--light {
-  padding-right: 36px;
+.working__image-interior {
+  position: absolute;
+  right: 36px;
+  top: 23px;
+  fill: #149080;
+  opacity: 0.5;
 }
 
-.working__item-image {
-  padding-right: 27px;
-  opacity: 0.5;
+.working__image-toy {
+  position: absolute;
+  right: 27px;
+  top: 21px;
   fill: #149080;
+  opacity: 0.5;
+}
+
+.working__link:hover .working__image-interior,
+.working__link:hover .working__image-toy {
+  opacity: 0.7;
+}
+
+.working__link:active .working__image-interior,
+.working__link:active .working__image-toy {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -143,15 +140,22 @@
     padding-bottom: 34px;
     font-size: 20px;
     line-height: $lineHeight-medium_big;
+
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+      padding-bottom: 39px;
+    }
   }
 
-  .working__image-interior::after {
+  .working__image-interior {
+    right: 36px;
     top: 30px;
   }
 
-  .working__image-toy::after {
-    top: 31px;
+  .working__image-toy {
     right: 33px;
+    top: 31px;
   }
 }
 
@@ -181,5 +185,10 @@
 
   .working__list {
     padding-top: 355px;
+  }
+
+  .working__image-toy {
+    right: 35px;
+    top: 31px;
   }
 }

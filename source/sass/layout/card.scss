@@ -37,17 +37,26 @@
 }
 
 .card__price {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   position: relative;
   padding-top: 23px;
   font-weight: 700;
   color: $textСolor-main;
   border-top: 1px solid #ececec;
+}
 
-  &::after {
-    content: url("../img/card/basket.svg");
-    position: absolute;
-    right: 0;
+.card__price-icon {
+  cursor: pointer;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -58,6 +67,14 @@
 
   .card__container {
     display: flex;
+  }
+
+  .card__container:hover .card__description {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card__container:active .card__description {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
   .card__image-link {
@@ -87,14 +104,6 @@
 @media (min-width: $desktop-width) {
   .card__container {
     flex-direction: column;
-  }
-
-  .card__container:hover .card__description {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .card__container:active .card__description {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
   .card__image-link {

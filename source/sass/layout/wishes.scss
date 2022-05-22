@@ -17,16 +17,28 @@
 }
 
 .wishes__text {
+  width: calc(100% - 37px);
   margin-top: 22px;
+  padding: 17px;
+  font-size: $fontSize-medium_big;
+  line-height: $lineHeight-small_big;
   border: 2px solid $textСolor-secondary;
   resize: none;
+  outline: none;
 
   &::placeholder {
-    padding: 17px;
     font-size: $fontSize-medium_small;
     line-height: $lineHeight-small_big;
     color: $textСolor-main;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    border-color: #62d1ba;
   }
 }
 

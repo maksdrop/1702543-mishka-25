@@ -11,15 +11,11 @@
   left: 30px;
   padding-top: 3px;
   opacity: 0.2;
+}
 
-  &:hover {
-    opacity: 1;
-    fill: $backgroundColor-modal;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.basket__link:hover .basket__icon {
+  opacity: 1;
+  fill: $backgroundColor-modal;
 }
 
 @media (min-width: $tablet-width) {

@@ -32,6 +32,13 @@
   display: none;
 }
 
+.form__reset-fieldset {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+}
+
 .shape__mark {
   position: absolute;
   left: 30px;

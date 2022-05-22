@@ -69,7 +69,7 @@
     content: none;
   }
 
-  .color-form__position {
+  .color-form__fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -103,8 +103,7 @@
     min-height: 228px;
   }
 
-  .color-form__position {
-    display: grid;
+  .color-form__fieldset {
     grid-template-columns: 1fr 1fr 1fr;
   }
 

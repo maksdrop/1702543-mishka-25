@@ -1,3 +1,5 @@
+// mobile menu
+
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 
