@@ -8,6 +8,10 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
@@ -150,7 +154,7 @@
               <source srcset="img/product-week/product-week-mobile.webp 1x, img/product-week/product-week-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1150px)" srcset="img/product-week/product-week-desktop.jpg 1x, img/product-week/product-week-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/product-week/product-week-tablet.jpg 1x, img/product-week/product-week-tablet@2x.jpg 2x">
-              <img class="product-week__image" src="img/product-week/product-week-mobile.jpg" srcset="img/product-week/product-week-mobile@2x.jpg 2x" width="260" height="315" alt="Товар недели.">
+              <img class="product-week__image" src="img/product-week/product-week-mobile.jpg" srcset="img/product-week/product-week-mobile@2x.jpg 2x" width="260" height="315" loading="lazy" alt="Товар недели.">
             </picture>
           </div>
           <div class="product-week__order order-week">
@@ -254,7 +258,15 @@
           </div>
         </div>
         <div class="contacts__map map">
-          <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.8546559354405!2d30.322525928273237!3d59.93868434908188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2sby!4v1652259809240!5m2!1sru!2sby" width="320" height="457" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x" type="image/webp">
+            <source srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1150px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 2x" width="320" height="454" loading="lazy" alt="Карта.">
+          </picture>
+          <div class="map__google"></div>
         </div>
         <button class="contacts__button button">напишите нам</button>
       </section>
@@ -328,6 +340,7 @@
         </form>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv3Mue0MjRxWehq81r_XyQS8Lnr-iQ-VQ&callback=initMap"></script>
   </body>
 </html>

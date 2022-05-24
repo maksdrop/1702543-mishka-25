@@ -2,12 +2,16 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="img/favicons/apple.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
     <title>Каталог товаров</title>
   </head>
   <body class="page__body">
@@ -108,6 +112,9 @@
               <div class="card__container">
                 <a class="card__image-link" href="#">
                   <picture>
+                    <source media="(min-width: 1150px)" srcset="img/catalog/catalog-desktop-1.webp 1x, img/catalog/catalog-desktop-1@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-tablet-1.webp 1x, img/catalog/catalog-tablet-1@2x.webp 2x" type="image/webp">
+                    <source srcset="img/catalog/catalog-mobile-1.webp 1x, img/catalog/catalog-mobile-1@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1150px)" srcset="img/catalog/catalog-desktop-1.png, img/catalog/catalog-desktop-1@2x.png 2x" />
                     <source media="(min-width: 768px)" srcset="img/catalog/catalog-tablet-1.png, img/catalog/catalog-tablet-1@2x.png 2x" />
                     <img class="card__image" src="img/catalog/catalog-mobile-1.png" srcset="img/catalog/catalog-mobile-1@2x.png 2x" width="260" height="195" alt="Зайчик-попрыгайчик." />
@@ -133,6 +140,9 @@
               <div class="card__container">
                 <a class="card__image-link" href="#">
                   <picture>
+                    <source media="(min-width: 1150px)" srcset="img/catalog/catalog-desktop-2.webp 1x, img/catalog/catalog-desktop-2@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-tablet-2.webp 1x, img/catalog/catalog-tablet-2@2x.webp 2x" type="image/webp">
+                    <source srcset="img/catalog/catalog-mobile-2.webp 1x, img/catalog/catalog-mobile-2@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1150px)" srcset="img/catalog/catalog-desktop-2.png, img/catalog/catalog-desktop-2@2x.png 2x" />
                     <source media="(min-width: 768px)" srcset="img/catalog/catalog-tablet-2.png, img/catalog/catalog-tablet-2@2x.png 2x" />
                     <img class="card__image" src="img/catalog/catalog-mobile-2.png" srcset="img/catalog/catalog-mobile-2@2x.png 2x" width="260" height="195" alt="Корзинка для белья." />
@@ -158,6 +168,9 @@
               <div class="card__container">
                 <a class="card__image-link" href="#">
                   <picture>
+                    <source media="(min-width: 1150px)" srcset="img/catalog/catalog-desktop-3.webp 1x, img/catalog/catalog-desktop-3@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-tablet-3.webp 1x, img/catalog/catalog-tablet-3@2x.webp 2x" type="image/webp">
+                    <source srcset="img/catalog/catalog-mobile-3.webp 1x, img/catalog/catalog-mobile-3@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1150px)" srcset="img/catalog/catalog-desktop-3.png, img/catalog/catalog-desktop-3@2x.png 2x" />
                     <source media="(min-width: 768px)" srcset="img/catalog/catalog-tablet-3.png, img/catalog/catalog-tablet-3@2x.png 2x" />
                     <img class="card__image" src="img/catalog/catalog-mobile-3.png" srcset="img/catalog/catalog-mobile-3@2x.png 2x" width="260" height="195" alt="Большая корзинка для игрушек." />
@@ -196,6 +209,9 @@
           <div class="production__video video">
             <div class="video__wrapper">
               <picture>
+                <source media="(min-width: 1150px)" srcset="img/production/video-desktop.webp 1x, img/production/video-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/production/video-tablet.webp 1x, img/production/video-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/production/video-mobile.webp 1x, img/production/video-mobile.png@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1150px)" srcset="img/production/video-desktop.png, img/production/video-desktop@2x.png 2x" />
                 <source media="(min-width: 768px)" srcset="img/production/video-tablet.png, img/production/video-tablet@2x.png 2x" />
                 <img class="video__image" src="img/production/video-mobile.png" srcset="img/production/video-mobile.png@2x.png 2x" width="260" height="195" alt="Большая корзинка для игрушек." />
@@ -276,6 +292,6 @@
         </form>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

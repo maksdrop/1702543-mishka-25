@@ -92,7 +92,12 @@
   }
 
   .contacts__email {
+    display: block;
     margin-right: 52px;
+  }
+
+  .contacts__email--link {
+    padding-bottom: 6px;
   }
 
   .contacts__address {
@@ -136,6 +141,10 @@
 
   .contacts__container {
     flex-direction: column;
+  }
+
+  .contacts__email--link {
+    padding-bottom: 10px;
   }
 
   .contacts__address {
