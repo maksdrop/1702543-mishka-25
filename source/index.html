@@ -68,7 +68,7 @@
           </div>
           <div class="main-nav__search search">
             <form class="search__link" action="https://echo.htmlacademy.ru/" method="get">
-              <label class="search__label">
+              <label class="search__label" tabindex="0">
                 <svg class="search__icon" width="18" height="18">
                   <use xlink:href="img/sprite.svg#search"></use>
                 </svg>
@@ -104,17 +104,21 @@
       <h1 class="visually-hidden">«Mishka» - ручная работа для дома</h1>
       <section class="working">
         <div class="working-wrapper">
-          <h2 class="working__title title content-wrapper">Милые штуки ручной работы для дома</h2>
+          <h2 class="working__title title content-wrapper">
+            Милые штуки ручной
+            <br>
+            работы для дома
+          </h2>
           <ul class="working__list content-wrapper">
             <li class="working__item">
-              <a class="working__link working__item--light">Предметы<br> интерьера
+              <a class="working__link working__item--light" tabindex="0">Предметы<br> интерьера
                 <svg class="working__image working__image-interior" width="40" height="62">
                   <use xlink:href="img/sprite.svg#interior"></use>
                 </svg>
               </a>
             </li>
             <li class="working__item">
-              <a class="working__link working__item--dark">Детские<br> игрушки
+              <a class="working__link working__item--dark" tabindex="0">Детские<br> игрушки
                 <svg class="working__image working__image-toy" width="60" height="60">
                   <use xlink:href="img/sprite.svg#toy"></use>
                 </svg>
@@ -164,80 +168,83 @@
         </div>
       </section>
       <section class="about">
-        <div class="content-wrapper">
-          <h2 class="about__title title">Коротко о нас:</h2>
-          <div class="advantages">
-            <ul class="advantages__list">
-              <li class="advantages__item advantages__item--ecology">
-                <svg class="advantages__image advantages__image--ecology" width="33" height="38">
-                  <use xlink:href="img/sprite.svg#about-ecology"></use>
+        <h2 class="about__title title content-wrapper">Коротко о нас:</h2>
+        <div class="advantages content-wrapper">
+          <ul class="advantages__list advantages__list--indent">
+            <li class="advantages__item advantages__item--ecology">
+              <svg class="advantages__image advantages__image--ecology" width="33" height="38">
+                <use xlink:href="img/sprite.svg#about-ecology"></use>
+              </svg>
+              <h3 class="advantages__subtitle">Экологически чистые материалы</h3>
+            </li>
+            <li class="advantages__item advantages__item--style">
+              <svg class="advantages__image advantages__image--style" width="47" height="27">
+                <use xlink:href="img/sprite.svg#about-style"></use>
+              </svg>
+              <h3 class="advantages__subtitle">Скандинавский стиль по российской цене</h3>
+            </li>
+            <li class="advantages__item advantages__item--likes">
+              <svg class="advantages__image advantages__image--likes" width="34" height="27">
+                <use xlink:href="img/sprite.svg#about-likes"></use>
+              </svg>
+              <h3 class="advantages__subtitle">Увеличивает лайки на фотографиях</h3>
+            </li>
+          </ul>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--hand">
+              <svg class="advantages__image advantages__image--hand" width="35" height="34">
+                <use xlink:href="img/sprite.svg#about-hand"></use>
                 </svg>
-                <h3 class="advantages__subtitle">Экологически чистые материалы</h3>
-              </li>
-              <li class="advantages__item advantages__item--style">
-                <svg class="advantages__image advantages__image--style" width="47" height="27">
-                  <use xlink:href="img/sprite.svg#about-style"></use>
+              <h3 class="advantages__subtitle">Связано вручную с любовью и умилением</h3>
+            </li>
+            <li class="advantages__item advantages__item--support">
+              <svg class="advantages__image advantages__image--support" width="55" height="23">
+                <use xlink:href="img/sprite.svg#about-support"></use>
+              </svg>
+              <h3 class="advantages__subtitle">Поддержка отечественного производителя</h3>
+            </li>
+            <li class="advantages__item advantages__item--gift">
+              <svg class="advantages__image advantages__image--gift" width="33" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#about-gift"></use>
+              </svg>
+              <h3 class="advantages__subtitle">Поставляется в подарочной упаковке</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="feedback">
+          <div class="feedback__wrapper content-wrapper">
+            <picture>
+              <source srcset="img/feedback/feedback.webp 1x, img/feedback/feedback@2x.webp 2x" type="image/webp">
+              <img class="feedback__image" src="img/feedback/feedback.jpg" srcset="img/feedback/feedback@2x.jpg 2x" width="350" height="457" loading="lazy" alt="Фон.">
+            </picture>
+            <h2 class="feedback__title title">Отзывы</h2>
+            <p class="feedback__describe">Я молодая мама, но всё равно фотографии не набирали и близко такого
+              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек
+              в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <div class="feedback__author">
+              <span class="feedback__author-name title">Анастасия Красильникова</span>
+              <a class="feedback__author-instagram" href="https://www.instagram.com/@misssssiskras/">@misssssiskras</a>
+            </div>
+            <div class="feedback__switch switch">
+              <a class="switch__back" href="#">
+                <svg class="switch__image" width="50" height="26">
+                  <use xlink:href="img/sprite.svg#switch-back"></use>
                 </svg>
-                <h3 class="advantages__subtitle">Скандинавский стиль по российской цене</h3>
-              </li>
-              <li class="advantages__item advantages__item--likes">
-                <svg class="advantages__image advantages__image--likes" width="34" height="27">
-                  <use xlink:href="img/sprite.svg#about-likes"></use>
+                <span class="visually-hidden">Вперед.</span>
+              </a>
+              <a class="switch__forward" href="#">
+                <svg class="switch__image" width="50" height="26">
+                  <use xlink:href="img/sprite.svg#switch-forward"></use>
                 </svg>
-                <h3 class="advantages__subtitle">Увеличивает лайки на фотографиях</h3>
-              </li>
-            </ul>
-            <ul class="advantages__list">
-              <li class="advantages__item advantages__item--hand">
-                <svg class="advantages__image advantages__image--hand" width="35" height="34">
-                  <use xlink:href="img/sprite.svg#about-hand"></use>
-                  </svg>
-                <h3 class="advantages__subtitle">Связано вручную с любовью и умилением</h3>
-              </li>
-              <li class="advantages__item advantages__item--support">
-                <svg class="advantages__image advantages__image--support" width="55" height="23">
-                  <use xlink:href="img/sprite.svg#about-support"></use>
-                </svg>
-                <h3 class="advantages__subtitle">Поддержка отечественного производителя</h3>
-              </li>
-              <li class="advantages__item advantages__item--gift">
-                <svg class="advantages__image advantages__image--gift" width="33" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#about-gift"></use>
-                </svg>
-                <h3 class="advantages__subtitle">Поставляется в подарочной упаковке</h3>
-              </li>
-            </ul>
-          </div>
-          <div class="feedback">
-            <div class="feedback__wrapper">
-              <h2 class="feedback__title title">Отзывы</h2>
-              <p class="feedback__describe">Я молодая мама, но всё равно фотографии не набирали и близко такого
-                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек
-                в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-              </p>
-              <div class="feedback__author">
-                <span class="feedback__author-name title">Анастасия Красильникова</span>
-                <a class="feedback__author-instagram" href="https://www.instagram.com/@misssssiskras/">@misssssiskras</a>
-              </div>
-              <div class="feedback__switch switch">
-                <a class="switch__back" href="#">
-                  <svg class="switch__image" width="50" height="26">
-                    <use xlink:href="img/sprite.svg#switch-back"></use>
-                  </svg>
-                  <span class="visually-hidden">Вперед.</span>
-                </a>
-                <a class="switch__forward" href="#">
-                  <svg class="switch__image" width="50" height="26">
-                    <use xlink:href="img/sprite.svg#switch-forward"></use>
-                  </svg>
-                  <span class="visually-hidden">Назад.</span>
-                </a>
-              </div>
-              <div class="feedback__button">
-                <button class="feedback__button-center button">написать</button>
-              </div>
+                <span class="visually-hidden">Назад.</span>
+              </a>
+            </div>
+            <div class="feedback__button">
+              <button class="feedback__button-center button">написать</button>
             </div>
           </div>
+        </div>
         </div>
       </section>
       <section class="contacts">
@@ -249,11 +256,11 @@
           <div class="contacts__container">
             <div class="contacts__email">
               <span class="contacts__email-name">e-mail:</span>
-              <a class="contacts__email--link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </div>
             <div class="contacts__address">
-              <span class="contacts__direction">адрес:</span>
-              <address class="contacts__direction--locality">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</address>
+              <span class="contacts__address-text">адрес:</span>
+              <address class="contacts__address-direction">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</address>
             </div>
           </div>
         </div>
@@ -273,8 +280,8 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__container content-wrapper">
-        <a class="footer__logo" href="#">
-          <svg class="footer__logo-image" width="102" height="34">
+        <a class="main-footer__logo" href="#">
+          <svg class="main-footer__logo-image" width="102" height="34">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
@@ -311,7 +318,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal__close">
+    <div class="modal modal--close">
       <div class="modal__container">
         <h2 class="modal__title title">Добавить<br> в корзину</h2>
         <span class="modal__choose">Выберите размер:</span>

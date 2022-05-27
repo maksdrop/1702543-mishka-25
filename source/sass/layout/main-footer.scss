@@ -4,7 +4,7 @@
   background-color: $backgroundColor-secondary;
 }
 
-.footer__logo {
+.main-footer__logo {
   display: none;
 }
 
@@ -23,11 +23,11 @@
     height: 34px;
   }
 
-  .footer__logo {
+  .main-footer__logo {
     display: block;
   }
 
-  .footer__logo-image {
+  .main-footer__logo-image {
     fill: $textСolor-main;
 
     &:hover {

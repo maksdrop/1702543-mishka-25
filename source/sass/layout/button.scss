@@ -14,4 +14,8 @@
   &:active {
     color: #7c7c7c;
   }
+
+  &:focus-visible {
+    outline: 2px solid $textСolor-main;
+  }
 }

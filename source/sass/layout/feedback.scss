@@ -2,6 +2,10 @@
   margin-top: 58px;
 }
 
+.feedback__image {
+  display: none;
+}
+
 .feedback__describe {
   margin: 0;
   padding-top: 14px;
@@ -42,15 +46,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .feedback {
-    background-image: url("../img/feedback/feedback.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 82px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/feedback/feedback@2x.jpg");
-    }
+  .feedback__image {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    background-color: #f3f3f3;
   }
 
   .feedback__wrapper {
@@ -101,14 +102,21 @@
 @media (min-width: $desktop-width) {
   .feedback {
     margin-top: 90px;
+    background-image: none;
   }
 
   .feedback__wrapper {
-    margin-left: 160px;
+    position: relative;
+    padding-left: 225px;
+  }
+
+  .feedback__image {
+    left: 50px;
   }
 
   .feedback__title {
-    font-size: 52px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .feedback__author {

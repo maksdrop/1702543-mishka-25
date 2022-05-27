@@ -51,7 +51,7 @@
   }
 
   .advantages__subtitle {
-    min-width: 300px;
+    min-width: 290px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -59,6 +59,11 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    margin: 0 160px;
+    justify-content: flex-start;
+    padding-left: 225px;
+  }
+
+  .advantages__list--indent {
+    padding-right: 40px;
   }
 }
