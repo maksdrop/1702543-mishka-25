@@ -12,6 +12,7 @@
 
 .product-week__image {
   width: 100%;
+  background-color: #f1f1f1;
 }
 
 .product-week__order {
@@ -45,6 +46,8 @@
 @media (min-width: $desktop-width) {
   .product-week {
     padding-top: 85px;
+    background-repeat: no-repeat;
+    background-size: 1050px 23px;
   }
 
   .product-week__wrapper {

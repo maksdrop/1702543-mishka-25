@@ -2,22 +2,17 @@
   padding-top: 34px;
 }
 
-.wishes__title {
-  margin-right: 60px;
-}
-
 .wishes__title::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 60px;
-  width: 100%;
+  width: calc(100% - 60px);
   height: 1px;
   background-color: #62d1ba;
 }
 
 .wishes__text {
-  width: calc(100% - 37px);
   margin-top: 22px;
   padding: 17px;
   font-size: $fontSize-medium_big;
@@ -44,11 +39,13 @@
 
 @media (min-width: $tablet-width) {
   .wishes {
+    display: block;
     padding-top: 50px;
   }
 
-  .wishes__title {
-    margin-right: 129px;
+  .wishes__container {
+    display: grid;
+    grid-template-columns: 169px 1fr;
   }
 
   .wishes__title::after {
@@ -61,8 +58,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .wishes__title {
-    margin-right: 75px;
+  .wishes__container {
+    display: grid;
+    grid-template-columns: 114px 1fr;
   }
 
   .wishes__text {

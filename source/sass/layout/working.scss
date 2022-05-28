@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  z-index: -1;
-  top: -17px;
   width: 100%;
   box-sizing: border-box;
   background-color: #f9f9f9;
@@ -45,9 +43,9 @@
   padding-top: 21px;
   padding-bottom: 31px;
   padding-left: 30px;
-  cursor: pointer;
   font-size: $fontSize-medium_big;
   color: #ffffff;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -113,7 +111,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -13px;
+      bottom: -12px;
       left: 0;
       right: 0;
       height: 24px;
@@ -129,10 +127,6 @@
     padding-top: 155px;
     font-size: 43px;
     line-height: 50px;
-
-    br {
-      display: none;
-    }
   }
 
   .working__list {

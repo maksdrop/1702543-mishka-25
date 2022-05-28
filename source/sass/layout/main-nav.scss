@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+  z-index: 2;
   width: 100%;
   margin: 0 auto;
   background-color: $backgroundColor-body;
@@ -91,19 +93,21 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .catalog-nav {
-    display: none;
-  }
-
-  .main-nav--closed .knitwork {
-    display: none;
-  }
-
-  .main-nav--closed .search {
-    display: none;
-  }
-
+  .main-nav--closed .catalog-nav,
+  .main-nav--closed .knitwork,
+  .main-nav--closed .search,
   .main-nav--closed .basket {
+    display: none;
+  }
+
+  .main-nav--nojs .catalog-nav,
+  .main-nav--nojs .knitwork,
+  .main-nav--nojs .search,
+  .main-nav--nojs .basket {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 }
@@ -137,6 +141,14 @@
   display: block;
   text-decoration: none;
   color: $textСolor-main;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -145,7 +157,7 @@
   }
 
   .main-nav__container {
-    grid-template-columns: 200px 200px minmax(82px, 1fr) 314px;
+    grid-template-columns: 180px 180px minmax(82px, 1fr) 314px;
     grid-template-rows: 1fr 1px minmax(45px, max-content);
     grid-template-areas:
       "logo offset1 search basket"
@@ -171,14 +183,6 @@
 
   .main-nav__link {
     display: inline;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .main-nav__toggle {

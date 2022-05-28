@@ -14,6 +14,7 @@
 @media (min-width: $tablet-width) {
   .about {
     padding-top: 55px;
+    padding-bottom: 85px;
     background-image: url("../img/slice/zigzag-line-desktop.svg");
     background-repeat: repeat-x;
     background-position: bottom;
@@ -32,6 +33,8 @@
   }
 
   .about__title {
-    margin-left: 160px;
+    padding-left: 225px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
