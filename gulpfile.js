@@ -67,7 +67,8 @@ const createWebp = () => {
     .pipe(squoosh( {
       webp: {}
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('source/img'));
 }
 
 // SVG
@@ -85,7 +86,8 @@ const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('source/img'));
 }
 
 // Copy
