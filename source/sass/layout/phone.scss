@@ -41,6 +41,10 @@
     border-color: #62d1ba;
     outline: none;
   }
+
+  &.error {
+    box-shadow: 0 0 10px #600000;
+  }
 }
 
 .phone__image {
