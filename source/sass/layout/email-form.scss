@@ -20,6 +20,10 @@
   position: relative;
 }
 
+.error {
+  box-shadow: 0 0 10px #600000;
+}
+
 .email-form__input {
   width: 100%;
   height: 52px;

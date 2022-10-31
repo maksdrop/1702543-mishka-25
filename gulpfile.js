@@ -26,6 +26,7 @@ export const styles = () => {
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -59,14 +60,15 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-// Weebp
+// Webp
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh( {
       webp: {}
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('source/img'));
 }
 
 // SVG
@@ -84,7 +86,8 @@ const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('source/img'));
 }
 
 // Copy
